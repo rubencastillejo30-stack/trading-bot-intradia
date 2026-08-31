@@ -1,0 +1,41 @@
+name: Actualizar datos intradía (sleeve paper trading)
+
+on:
+  # 2026-08-25: se retira el schedule.cron interino (era mitigación mientras
+  # no existía un pinger externo fiable). repository_dispatch vía cron-job.org
+  # está confirmado funcionando de forma consistente (ver runs reales en el
+  # historial), así que mantener el cron nativo en paralelo solo duplicaba
+  # ejecuciones/minutos de Actions y generaba condiciones de carrera de commit
+  # sin aportar cobertura adicional. Ver INVESTIGACION_INFRA_INTRADIA.md.
+  repository_dispatch:
+    # Disparo preferente: un pinger externo gratuito (cron-job.org u
+    # equivalente) llama a la API de GitHub cada ~5 min durante el
+    # mercado con event_type=intradia_tick. No sufre el "best effort"
+    # de schedule.cron -- ver INVESTIGACION_INFRA_INTRADIA.md para la
+    # justificación completa y los pasos de configuración.
+    types: [intradia_tick]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - run: python3 fetch_intradia.py
+      - name: Gestión de posiciones y señales (lógica determinista, sin Claude -- ver intradia_paper_trader.py)
+        run: python3 intradia_paper_trader.py
+      - name: Commit y push si hay cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data_live/intradia.json intradia_posiciones.json "intradia_historial_señales.json" intradia_resumen.json intradia_features_log.json
+          git diff --staged --quiet || git commit -m "Actualización intradía: datos + gestión de posiciones [skip ci]"
+          git pull --rebase --autostash || true
+          git push

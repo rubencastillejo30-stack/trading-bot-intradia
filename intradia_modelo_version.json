@@ -1,0 +1,54 @@
+{
+  "version_actual": "v0.2",
+  "historial": [
+    {
+      "version": "v0.1",
+      "fecha": "2026-08-21",
+      "features_usadas": ["normalized_speed (velocidad/ATR)", "relative_strength_qqq", "rvol_continuo", "distance_vwap_pct", "minutos_desde_apertura"],
+      "parametros": {
+        "umbral_normalized_speed": 0.30,
+        "umbral_rvol": 1.5,
+        "stop_atr_mult": 1.0,
+        "target_atr_mult": 1.5,
+        "position_size_eur": 200.0,
+        "max_posiciones_concurrentes": 5,
+        "capital_pico_eur": 1000.0,
+        "coste_ticks_roundtrip": 2
+      },
+      "motivo": "Versión inicial PROVISIONAL, un único filtro rígido (AND de 2 condiciones) para arrancar el pipeline de extremo a extremo.",
+      "resultado_antes": null,
+      "resultado_despues": "0 señales en la primera sesión completa (21-08-2026) -- filtro demasiado estricto combinado con muy pocas revisiones reales (5 de 26 esperadas por fallo de infraestructura, ver INVESTIGACION_INFRA_INTRADIA.md). Sustituido por v0.2 el mismo día."
+    },
+    {
+      "version": "v0.2",
+      "fecha": "2026-08-21",
+      "features_usadas": ["return_5m/10m/15m", "normalized_speed", "aceleracion", "atr", "rango_sesion_pct", "session_high/low", "max/min_reciente_12velas", "volatilidad_reciente", "rvol_continuo (variable, no filtro)", "distance_vwap_pct (variable, no filtro)", "relative_strength_qqq (variable en 3 detectores distintos)", "qqq/spy_return_since_open", "minutos_desde_apertura"],
+      "estrategias": {
+        "MOMENTUM_V01": "normalized_speed >= 0.20 (o <=-0.20) + aceleración misma dirección + fuerza relativa misma dirección",
+        "BREAKOUT_V01": "precio rompe el máximo o mínimo de las últimas 12 velas (~1h)",
+        "REVERSAL_V01": "precio dentro del 15% del extremo de sesión + última vela ya revierte en contra de ese extremo",
+        "RS_QQQ_V01": "fuerza relativa vs QQQ >= 0.5% (o <=-0.5%), señal aislada para medir su valor por sí sola",
+        "PULLBACK_V01": "tendencia de 15min >= 0.5% + retroceso de la última vela de 5min <= 0.3% en contra (continuación tras respiro leve)"
+      },
+      "parametros": {
+        "momentum_umbral_speed": 0.20,
+        "reversal_umbral_proximidad_pct": 0.15,
+        "rs_qqq_umbral": 0.005,
+        "pullback_umbral_tendencia_15m": 0.005,
+        "pullback_umbral_retroceso_5m": 0.003,
+        "stop_atr_mult": 1.0,
+        "target_atr_mult_default": 1.0,
+        "exit_targets_shadow_r": [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
+        "risk_pct_capital": 0.005,
+        "capital_teorico_eur": 10000.0,
+        "capital_teorico_ilustrativo": true,
+        "max_riesgo_simultaneo_multiplo": 10,
+        "coste_ticks_reportados": [1, 2, 3]
+      },
+      "motivo": "El filtro rígido de v0.1 (AND de normalized_speed+RVOL) queda ELIMINADO como condición obligatoria -- RVOL y distance_vwap pasan a ser variables registradas siempre, no gates. Se sustituye por 5 familias de señal INDEPENDIENTES y versionadas (no una combinación rígida), para poder medir después qué familia aporta de verdad, igual que el ablation de la investigación ORB (H7) mostró que 2 de 10 features explicaban casi todo -- aquí queremos la misma capacidad de diagnóstico, no asumirla de antemano. target_atr_mult baja de 1.5R a 1.0R como valor 'oficial' (el que cuenta para capital/riesgo), con seguimiento sombra (shadow) de 0.5R a 2R en paralelo sobre la MISMA operación para poder comparar salidas sin multiplicar el capital comprometido -- decisión informada por H7/H8 (targets grandes tienen probabilidad de acierto baja). Tamaño de posición pasa de notional fijo (200€) a RIESGO fijo (0.5% de un capital teórico ilustrativo de 10.000€ = 50€ de riesgo por operación) -- más realista y escalable que un € fijo por operación. NINGÚN umbral aquí está validado con walk-forward -- son puntos de partida razonables para generar muestra real de paper trading, sujetos a revisión SOLO con evidencia acumulada (nunca tras una sola sesión mala), siguiendo la disciplina DISCOVERY -> VALIDATION -> TEST del proyecto histórico paralelo (INVESTIGACION_PREDICTOR_INTRADIA.md).",
+      "periodo_decision": "Diseño basado en la investigación ORB H1-H9 ya cerrada (14 años de datos históricos) -- no se ha mirado ningún dato de paper trading en vivo para fijar estos umbrales, porque hasta ahora prácticamente no existía muestra (0 operaciones en v0.1).",
+      "resultado_antes": "v0.1: 0 señales, 0 operaciones en su única sesión completa.",
+      "resultado_despues": null
+    }
+  ]
+}
