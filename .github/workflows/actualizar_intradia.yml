@@ -37,5 +37,22 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data_live/intradia.json intradia_posiciones.json "intradia_historial_señales.json" intradia_resumen.json intradia_features_log.json
           git diff --staged --quiet || git commit -m "Actualización intradía: datos + gestión de posiciones [skip ci]"
-          git pull --rebase --autostash || true
-          git push
+
+          # 2026-08-31: dos disparos casi simultáneos (14s de diferencia, en
+          # pruebas manuales) escribieron valores distintos en los mismos JSON
+          # -> conflicto de CONTENIDO real, no solo "el remoto avanzó" (eso ya
+          # lo cubría el --autostash de abajo). Reintenta unas pocas veces: si
+          # el conflicto era de otro run que ya terminó de empujar, el reintento
+          # sale limpio; si sigue habiendo choque, se rinde sin dejar el
+          # checkout en un rebase a medias.
+          intentos=0
+          while [ $intentos -lt 4 ]; do
+            if git pull --rebase --autostash && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            intentos=$((intentos + 1))
+            sleep $((3 + RANDOM % 4))
+          done
+          echo "::warning::No se pudo empujar tras 4 intentos -- esta actualización se pierde, la siguiente ejecución trae datos más recientes igualmente."
+          exit 0
