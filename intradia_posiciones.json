@@ -85738,7 +85738,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.946,
-      "mae_r": -0.081,
+      "mae_r": -0.154,
       "features_en_entrada": {
         "ticker": "META",
         "precio_actual": 592.25,
@@ -86232,7 +86232,7 @@
       "capital_nocional_eur": 31059.35,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.134,
+      "mfe_r": 0.525,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AAPL",
@@ -86261,9 +86261,9 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
           "resuelto": false,
@@ -86290,6 +86290,49 @@
           "resultado_r": null,
           "motivo": null
         }
+      }
+    },
+    {
+      "id": "9a5480c3",
+      "ticker": "AVGO",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-09-02T17:40:47.601610+00:00",
+      "precio_entrada": 368.305,
+      "stop": 369.2297501918248,
+      "target": 367.3802498081752,
+      "riesgo_precio": 0.9247501918247849,
+      "cantidad_teorica": 54.06865599166444,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 19913.76,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AVGO",
+        "precio_actual": 368.305,
+        "atr": 0.9247501918247768,
+        "minutos_desde_apertura": 255,
+        "return_since_open": -0.00371941328452452,
+        "return_5m": null,
+        "return_10m": 0.0006857380898130927,
+        "return_15m": -0.00043422398187287214,
+        "speed": -0.005392128140318601,
+        "normalized_speed": -0.005830902429637247,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.00047513890114837196,
+        "rango_sesion_pct": 0.01742047870860649,
+        "session_high": 371.0899963378906,
+        "session_low": 364.6499938964844,
+        "max_reciente_12v": 369.4200134277344,
+        "min_reciente_12v": 366.0799865722656,
+        "volatilidad_reciente": 0.002352665525104745,
+        "rvol": 1.2041542869256012,
+        "qqq_return_since_open": 0.0013718258239543424,
+        "spy_return_since_open": 0.0027411184823287194,
+        "relative_strength_qqq": -0.005091239108478862,
+        "timestamp": "2026-09-02T17:40:47.601610+00:00"
       }
     }
   ]
