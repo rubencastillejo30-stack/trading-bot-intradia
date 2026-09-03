@@ -96323,9 +96323,9 @@
       "cantidad_teorica": 58.277607268439866,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 29783.35,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.886,
+      "mfe_r": 1.34,
       "mae_r": -0.443,
       "features_en_entrada": {
         "ticker": "MSFT",
@@ -96364,14 +96364,14 @@
           "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.25,
+          "motivo": "target"
         },
         "1.5": {
           "resuelto": false,
@@ -96383,6 +96383,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-09-03T17:25:38.502930+00:00",
+      "precio_cierre": 510.2020375279018,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 1.166,
+        "2_ticks": 2.331,
+        "3_ticks": 3.497
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 48.83,
+        "2_ticks": 47.67,
+        "3_ticks": 46.5
       }
     },
     {
@@ -96745,7 +96760,7 @@
       "capital_nocional_eur": 24826.22,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.559,
+      "mfe_r": 0.737,
       "mae_r": -0.369,
       "features_en_entrada": {
         "ticker": "META",
@@ -96820,7 +96835,7 @@
       "capital_nocional_eur": 33948.41,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 0.29,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AAPL",
@@ -96846,6 +96861,81 @@
         "spy_return_since_open": 0.004919158977270577,
         "relative_strength_qqq": 0.0009508149112569253,
         "timestamp": "2026-09-03T17:20:46.201402+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "2c1c63f1",
+      "ticker": "MSFT",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-03T17:25:38.502930+00:00",
+      "precio_entrada": 510.215,
+      "stop": 509.542634538923,
+      "target": 510.88736546107697,
+      "riesgo_precio": 0.6723654610769927,
+      "cantidad_teorica": 74.36431954715546,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 37941.79,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "MSFT",
+        "precio_actual": 510.215,
+        "atr": 0.6723654610770089,
+        "minutos_desde_apertura": 240,
+        "return_since_open": 0.016081142940213677,
+        "return_5m": null,
+        "return_10m": 0.00032352163705606785,
+        "return_15m": -0.0005976475311355589,
+        "speed": 0.03364577229817698,
+        "normalized_speed": 0.05004089925184808,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.0015205539440954542,
+        "rango_sesion_pct": 0.028219186873758823,
+        "session_high": 514.969970703125,
+        "session_low": 500.79998779296875,
+        "max_reciente_12v": 512.5,
+        "min_reciente_12v": 509.9100036621094,
+        "volatilidad_reciente": 0.0006378044653074081,
+        "rvol": 1.1402045429956251,
+        "qqq_return_since_open": 0.008046749574080359,
+        "spy_return_since_open": 0.005075315189718266,
+        "relative_strength_qqq": 0.008034393366133319,
+        "timestamp": "2026-09-03T17:25:38.502930+00:00"
       }
     }
   ]
