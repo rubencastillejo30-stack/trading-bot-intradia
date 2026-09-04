@@ -103403,7 +103403,7 @@
       "capital_nocional_eur": 7480.9,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.022,
+      "mfe_r": 0.271,
       "mae_r": -0.95,
       "features_en_entrada": {
         "ticker": "AMD",
@@ -103566,10 +103566,10 @@
       "cantidad_teorica": 16.528125252199178,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 10065.15,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
       "mfe_r": 0.172,
-      "mae_r": -0.548,
+      "mae_r": -1.464,
       "features_en_entrada": {
         "ticker": "META",
         "precio_actual": 608.971,
@@ -103597,35 +103597,50 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.25": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "2.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         }
+      },
+      "fecha_cierre": "2026-09-04T14:40:57.359208+00:00",
+      "precio_cierre": 611.996146484375,
+      "motivo_cierre": "stop",
+      "resultado_r": -1.0,
+      "pnl_bruto_eur": -50.0,
+      "costes_eur": {
+        "1_ticks": 0.331,
+        "2_ticks": 0.661,
+        "3_ticks": 0.992
+      },
+      "pnl_neto_eur": {
+        "1_ticks": -50.33,
+        "2_ticks": -50.66,
+        "3_ticks": -50.99
       }
     },
     {
@@ -103643,7 +103658,7 @@
       "capital_nocional_eur": 7687.35,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.643,
+      "mfe_r": 0.976,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AVGO",
@@ -103677,9 +103692,9 @@
           "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
           "resuelto": false,
@@ -103718,7 +103733,7 @@
       "capital_nocional_eur": 12829.54,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 0.02,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AMZN",
@@ -103744,6 +103759,38 @@
         "spy_return_since_open": -0.0014313032924087032,
         "relative_strength_qqq": -0.007535081717836123,
         "timestamp": "2026-09-04T14:35:38.938407+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
       }
     }
   ]
