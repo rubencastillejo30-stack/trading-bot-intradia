@@ -1,8 +1,53 @@
 {
-  "actualizado_utc": "2026-09-08T18:01:13.665438+00:00",
+  "actualizado_utc": "2026-09-08T18:05:41.739038+00:00",
   "mercado_abierto": true,
   "modelo_version": "v0.2",
   "abiertas_esta_ejecucion": [
+    {
+      "id": "d3373242",
+      "ticker": "AVGO",
+      "estrategia_id": "BREAKOUT_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-08T18:05:41.739038+00:00",
+      "precio_entrada": 369.31,
+      "stop": 368.58455139160156,
+      "target": 370.03544860839844,
+      "riesgo_precio": 0.7254486083984375,
+      "cantidad_teorica": 68.9228698231075,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 25453.91,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AVGO",
+        "precio_actual": 369.31,
+        "atr": 0.7254486083984375,
+        "minutos_desde_apertura": 280,
+        "return_since_open": 0.01535499017874753,
+        "return_5m": null,
+        "return_10m": 0.0005689349580382252,
+        "return_15m": 0.0023340691124351665,
+        "speed": 0.019946406773158492,
+        "normalized_speed": 0.02749527194930305,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.002618191586739766,
+        "rango_sesion_pct": 0.027369289579991376,
+        "session_high": 372.69989013671875,
+        "session_low": 362.7449951171875,
+        "max_reciente_12v": 369.1700134277344,
+        "min_reciente_12v": 366.4599914550781,
+        "volatilidad_reciente": 0.0011679013798382885,
+        "rvol": 0.7931166712371641,
+        "qqq_return_since_open": -0.0014702381536917386,
+        "spy_return_since_open": -0.001878902194152987,
+        "relative_strength_qqq": 0.016825228332439268,
+        "timestamp": "2026-09-08T18:05:41.739038+00:00"
+      }
+    }
+  ],
+  "cerradas_esta_ejecucion": [
     {
       "id": "97611d38",
       "ticker": "AVGO",
@@ -16,9 +61,9 @@
       "cantidad_teorica": 79.92557154157016,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 29444.98,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 1.447,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AVGO",
@@ -44,51 +89,6 @@
         "spy_return_since_open": -0.002002389915973568,
         "relative_strength_qqq": 0.014721089020234501,
         "timestamp": "2026-09-08T18:01:13.665438+00:00"
-      }
-    }
-  ],
-  "cerradas_esta_ejecucion": [
-    {
-      "id": "c2e6915b",
-      "ticker": "AVGO",
-      "estrategia_id": "RS_QQQ_V01",
-      "direccion": "LONG",
-      "fecha_entrada": "2026-09-08T17:20:51.523355+00:00",
-      "precio_entrada": 367.162,
-      "stop": 366.3647108328683,
-      "target": 367.95928916713166,
-      "riesgo_precio": 0.7972891671316802,
-      "cantidad_teorica": 62.71250389601995,
-      "riesgo_eur": 50.0,
-      "capital_nocional_eur": 23025.65,
-      "estado": "cerrada",
-      "modelo_version": "v0.2",
-      "mfe_r": 1.916,
-      "mae_r": -0.88,
-      "features_en_entrada": {
-        "ticker": "AVGO",
-        "precio_actual": 367.162,
-        "atr": 0.7972891671316964,
-        "minutos_desde_apertura": 235,
-        "return_since_open": 0.009449429758222827,
-        "return_5m": null,
-        "return_10m": -0.0004165428593695397,
-        "return_15m": 0.00011441731142713962,
-        "speed": 0.014625505942486607,
-        "normalized_speed": 0.018344041967988715,
-        "aceleracion": null,
-        "distance_vwap_pct": -0.0034251801674280396,
-        "rango_sesion_pct": 0.027369289579991376,
-        "session_high": 372.69989013671875,
-        "session_low": 362.7449951171875,
-        "max_reciente_12v": 367.7300109863281,
-        "min_reciente_12v": 365.5199890136719,
-        "volatilidad_reciente": 0.0016238180456297521,
-        "rvol": 0.789384672503618,
-        "qqq_return_since_open": -0.0007073092516897139,
-        "spy_return_since_open": -0.0018854099018582593,
-        "relative_strength_qqq": 0.010156739009912541,
-        "timestamp": "2026-09-08T17:20:51.523355+00:00"
       },
       "shadows": {
         "0.5": {
@@ -112,9 +112,9 @@
           "motivo": "target"
         },
         "1.5": {
-          "resuelto": true,
-          "resultado_r": 1.5,
-          "motivo": "target"
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
         },
         "2.0": {
           "resuelto": false,
@@ -122,110 +122,20 @@
           "motivo": null
         }
       },
-      "fecha_cierre": "2026-09-08T18:01:13.665438+00:00",
-      "precio_cierre": 367.95928916713166,
+      "fecha_cierre": "2026-09-08T18:05:41.739038+00:00",
+      "precio_cierre": 369.03058201381134,
       "motivo_cierre": "target",
       "resultado_r": 1.0,
       "pnl_bruto_eur": 50.0,
       "costes_eur": {
-        "1_ticks": 1.254,
-        "2_ticks": 2.509,
-        "3_ticks": 3.763
+        "1_ticks": 1.599,
+        "2_ticks": 3.197,
+        "3_ticks": 4.796
       },
       "pnl_neto_eur": {
-        "1_ticks": 48.75,
-        "2_ticks": 47.49,
-        "3_ticks": 46.24
-      }
-    },
-    {
-      "id": "856d30aa",
-      "ticker": "META",
-      "estrategia_id": "RS_QQQ_V01",
-      "direccion": "LONG",
-      "fecha_entrada": "2026-09-08T17:55:37.574191+00:00",
-      "precio_entrada": 618.415,
-      "stop": 617.4022828892299,
-      "target": 619.42771711077,
-      "riesgo_precio": 1.0127171107700406,
-      "cantidad_teorica": 49.37212916446278,
-      "riesgo_eur": 50.0,
-      "capital_nocional_eur": 30532.47,
-      "estado": "cerrada",
-      "modelo_version": "v0.2",
-      "mfe_r": 0.0,
-      "mae_r": -1.17,
-      "features_en_entrada": {
-        "ticker": "META",
-        "precio_actual": 618.415,
-        "atr": 1.0127171107700892,
-        "minutos_desde_apertura": 270,
-        "return_since_open": 0.00412421351735337,
-        "return_5m": null,
-        "return_10m": -0.0002829448388596001,
-        "return_15m": 0.0005824842910178152,
-        "speed": 0.009407407407407272,
-        "normalized_speed": 0.00928927467242427,
-        "aceleracion": null,
-        "distance_vwap_pct": 0.001298537190497687,
-        "rango_sesion_pct": 0.0158311345646438,
-        "session_high": 623.219970703125,
-        "session_low": 613.469970703125,
-        "max_reciente_12v": 619.25,
-        "min_reciente_12v": 617.4400024414062,
-        "volatilidad_reciente": 0.000765451229775243,
-        "rvol": 0.6975542693131753,
-        "qqq_return_since_open": -0.0013176015790901108,
-        "spy_return_since_open": -0.0017683505254537657,
-        "relative_strength_qqq": 0.005441815096443481,
-        "timestamp": "2026-09-08T17:55:37.574191+00:00"
-      },
-      "shadows": {
-        "0.5": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
-        },
-        "0.75": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
-        },
-        "1.0": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
-        },
-        "1.25": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
-        },
-        "1.5": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
-        },
-        "2.0": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
-        }
-      },
-      "fecha_cierre": "2026-09-08T18:01:13.665438+00:00",
-      "precio_cierre": 617.4022828892299,
-      "motivo_cierre": "stop",
-      "resultado_r": -1.0,
-      "pnl_bruto_eur": -50.0,
-      "costes_eur": {
-        "1_ticks": 0.987,
-        "2_ticks": 1.975,
-        "3_ticks": 2.962
-      },
-      "pnl_neto_eur": {
-        "1_ticks": -50.99,
-        "2_ticks": -51.98,
-        "3_ticks": -52.96
+        "1_ticks": 48.4,
+        "2_ticks": 46.8,
+        "3_ticks": 45.2
       }
     }
   ],
