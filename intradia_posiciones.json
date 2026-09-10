@@ -136077,7 +136077,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.122,
-      "mae_r": -0.533,
+      "mae_r": -0.631,
       "features_en_entrada": {
         "ticker": "NVDA",
         "precio_actual": 218.5,
@@ -136152,7 +136152,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": -0.5,
+      "mae_r": -0.963,
       "features_en_entrada": {
         "ticker": "AAPL",
         "precio_actual": 324.144,
@@ -136224,10 +136224,10 @@
       "cantidad_teorica": 32.75209184110592,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 16553.89,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": -0.56,
+      "mae_r": -1.035,
       "features_en_entrada": {
         "ticker": "AMD",
         "precio_actual": 505.43,
@@ -136255,35 +136255,50 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.25": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "2.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         }
+      },
+      "fecha_cierre": "2026-09-10T17:01:13.077036+00:00",
+      "precio_cierre": 506.95662004743303,
+      "motivo_cierre": "stop",
+      "resultado_r": -1.0,
+      "pnl_bruto_eur": -50.0,
+      "costes_eur": {
+        "1_ticks": 0.655,
+        "2_ticks": 1.31,
+        "3_ticks": 1.965
+      },
+      "pnl_neto_eur": {
+        "1_ticks": -50.66,
+        "2_ticks": -51.31,
+        "3_ticks": -51.97
       }
     },
     {
@@ -136301,7 +136316,7 @@
       "capital_nocional_eur": 31508.35,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.773,
+      "mfe_r": 0.808,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AMZN",
@@ -136377,7 +136392,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": 0.0,
+      "mae_r": -0.377,
       "features_en_entrada": {
         "ticker": "MSFT",
         "precio_actual": 493.87,
@@ -136402,6 +136417,81 @@
         "spy_return_since_open": 0.0016093962718819466,
         "relative_strength_qqq": 0.007155362746314564,
         "timestamp": "2026-09-10T16:55:38.678731+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "f96e3596",
+      "ticker": "AMD",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-09-10T17:01:13.077036+00:00",
+      "precio_entrada": 505.96,
+      "stop": 507.3417334856306,
+      "target": 504.5782665143694,
+      "riesgo_precio": 1.3817334856306047,
+      "cantidad_teorica": 36.186428511704385,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 18308.89,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AMD",
+        "precio_actual": 505.96,
+        "atr": 1.3817334856305803,
+        "minutos_desde_apertura": 215,
+        "return_since_open": -0.005386302617024774,
+        "return_5m": -0.00037518992470542134,
+        "return_10m": 0.00041522491349477164,
+        "return_15m": -0.0006320589003485644,
+        "speed": -0.012744242823401258,
+        "normalized_speed": -0.00922337263729639,
+        "aceleracion": -0.0011659014298958104,
+        "distance_vwap_pct": -0.004286827734607689,
+        "rango_sesion_pct": 0.025736630247544526,
+        "session_high": 516.3322143554688,
+        "session_low": 503.239990234375,
+        "max_reciente_12v": 507.010009765625,
+        "min_reciente_12v": 503.239990234375,
+        "volatilidad_reciente": 0.00117194201131556,
+        "rvol": 0.6713893105579543,
+        "qqq_return_since_open": 0.0048829677526762705,
+        "spy_return_since_open": 0.0015170419831163073,
+        "relative_strength_qqq": -0.010269270369701045,
+        "timestamp": "2026-09-10T17:01:13.077036+00:00"
       }
     }
   ]
