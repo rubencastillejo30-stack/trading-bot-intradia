@@ -133689,9 +133689,9 @@
       "cantidad_teorica": 14.451066617945356,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 7353.28,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.584,
+      "mfe_r": 1.0,
       "mae_r": -0.584,
       "features_en_entrada": {
         "ticker": "AMD",
@@ -133725,14 +133725,14 @@
           "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
           "resuelto": false,
@@ -133749,6 +133749,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-09-10T16:05:40.562876+00:00",
+      "precio_cierre": 505.380047781808,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 0.289,
+        "2_ticks": 0.578,
+        "3_ticks": 0.867
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 49.71,
+        "2_ticks": 49.42,
+        "3_ticks": 49.13
       }
     },
     {
@@ -135041,8 +135056,8 @@
       "capital_nocional_eur": 24925.75,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
-      "mae_r": -0.871,
+      "mfe_r": 0.034,
+      "mae_r": -0.964,
       "features_en_entrada": {
         "ticker": "NVDA",
         "precio_actual": 218.755,
@@ -135207,7 +135222,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": 0.0,
+      "mae_r": -0.525,
       "features_en_entrada": {
         "ticker": "AMZN",
         "precio_actual": 252.8,
@@ -135232,6 +135247,81 @@
         "spy_return_since_open": 0.001193842231498543,
         "relative_strength_qqq": 0.005775269953092188,
         "timestamp": "2026-09-10T16:01:15.488592+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "af6669f1",
+      "ticker": "AMD",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-09-10T16:05:40.562876+00:00",
+      "precio_entrada": 506.478,
+      "stop": 507.92896479143417,
+      "target": 505.02703520856585,
+      "riesgo_precio": 1.45096479143416,
+      "cantidad_teorica": 34.459829966362655,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 17453.15,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AMD",
+        "precio_actual": 506.478,
+        "atr": 1.4509647914341517,
+        "minutos_desde_apertura": 160,
+        "return_since_open": -0.0043680207464333876,
+        "return_5m": null,
+        "return_10m": 0.002014023982375601,
+        "return_15m": -0.003760920933428835,
+        "speed": -0.01388757629394526,
+        "normalized_speed": -0.009571270354684903,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.004566743310930448,
+        "rango_sesion_pct": 0.024183635307571227,
+        "session_high": 516.3322143554688,
+        "session_low": 504.0299987792969,
+        "max_reciente_12v": 509.8999938964844,
+        "min_reciente_12v": 505.3800048828125,
+        "volatilidad_reciente": 0.0021429234245364404,
+        "rvol": 0.6427919235359666,
+        "qqq_return_since_open": 0.004162172117130103,
+        "spy_return_since_open": 0.000712343847175223,
+        "relative_strength_qqq": -0.00853019286356349,
+        "timestamp": "2026-09-10T16:05:40.562876+00:00"
       }
     }
   ]
