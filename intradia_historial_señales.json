@@ -266712,6 +266712,91 @@
         "timestamp": "2026-09-10T13:31:04.565899+00:00"
       },
       "decision": "ejecutada"
+    },
+    {
+      "id": "b062c8b4",
+      "timestamp": "2026-09-10T13:35:42.894476+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "AAPL",
+      "señal": {
+        "ticker": "AAPL",
+        "estrategia_id": "RS_QQQ_V01",
+        "direccion": "LONG",
+        "precio_entrada": 320.5,
+        "stop": 319.19866943359375,
+        "target": 321.80133056640625,
+        "atr": 1.30133056640625,
+        "motivo": "fuerza relativa vs QQQ=1.067% >= +0.500%"
+      },
+      "features_en_entrada": {
+        "ticker": "AAPL",
+        "precio_actual": 320.5,
+        "atr": 1.30133056640625,
+        "minutos_desde_apertura": 10,
+        "return_since_open": 0.011711200969117819,
+        "return_5m": null,
+        "return_10m": 0.003443976595291165,
+        "return_15m": null,
+        "speed": 0.3709991455078125,
+        "normalized_speed": 0.2850921626565358,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.004857103463826053,
+        "rango_sesion_pct": 0.013541735404830658,
+        "session_high": 320.8598937988281,
+        "session_low": 316.57000732421875,
+        "max_reciente_12v": 320.8598937988281,
+        "min_reciente_12v": 316.57000732421875,
+        "volatilidad_reciente": null,
+        "rvol": 1.4737766106932497,
+        "qqq_return_since_open": 0.0010387531167121988,
+        "spy_return_since_open": 2.640924948527079e-05,
+        "relative_strength_qqq": 0.01067244785240562,
+        "timestamp": "2026-09-10T13:35:42.894476+00:00"
+      },
+      "decision": "rechazada",
+      "motivo_rechazo": "ya_hay_posicion_abierta_en_este_ticker"
+    },
+    {
+      "id": "08b18648",
+      "timestamp": "2026-09-10T13:35:42.894476+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "NVDA",
+      "señal": {
+        "ticker": "NVDA",
+        "estrategia_id": "RS_QQQ_V01",
+        "direccion": "SHORT",
+        "precio_entrada": 219.005,
+        "stop": 219.70879093715124,
+        "target": 218.30120906284876,
+        "atr": 0.7037909371512276,
+        "motivo": "fuerza relativa vs QQQ=-0.775% <= -0.500%"
+      },
+      "features_en_entrada": {
+        "ticker": "NVDA",
+        "precio_actual": 219.005,
+        "atr": 0.7037909371512276,
+        "minutos_desde_apertura": 10,
+        "return_since_open": -0.006712477521167437,
+        "return_5m": null,
+        "return_10m": 0.0009369147412383594,
+        "return_15m": null,
+        "speed": -0.1480000610351567,
+        "normalized_speed": -0.21028980798505945,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.0018645015610969378,
+        "rango_sesion_pct": 0.011520096777062231,
+        "session_high": 220.99000549316406,
+        "session_low": 218.4499969482422,
+        "max_reciente_12v": 220.99000549316406,
+        "min_reciente_12v": 218.4499969482422,
+        "volatilidad_reciente": null,
+        "rvol": 0.6875999253848247,
+        "qqq_return_since_open": 0.0010387531167121988,
+        "spy_return_since_open": 2.640924948527079e-05,
+        "relative_strength_qqq": -0.007751230637879636,
+        "timestamp": "2026-09-10T13:35:42.894476+00:00"
+      },
+      "decision": "ejecutada"
     }
   ]
 }
