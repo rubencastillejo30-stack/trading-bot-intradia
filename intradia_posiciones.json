@@ -152283,7 +152283,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.262,
-      "mae_r": -0.688,
+      "mae_r": -0.81,
       "features_en_entrada": {
         "ticker": "AMZN",
         "precio_actual": 251.89,
@@ -152433,7 +152433,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": -0.768,
+      "mae_r": -0.798,
       "features_en_entrada": {
         "ticker": "TSLA",
         "precio_actual": 357.625,
@@ -152583,7 +152583,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.129,
-      "mae_r": -0.488,
+      "mae_r": -0.489,
       "features_en_entrada": {
         "ticker": "AMD",
         "precio_actual": 483.51,
@@ -152655,10 +152655,10 @@
       "cantidad_teorica": 46.26633560117335,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 23200.25,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": 0.0,
+      "mae_r": -1.166,
       "features_en_entrada": {
         "ticker": "MSFT",
         "precio_actual": 501.45,
@@ -152683,6 +152683,96 @@
         "spy_return_since_open": -0.0009089332952486595,
         "relative_strength_qqq": 0.004612440990468203,
         "timestamp": "2026-09-14T15:03:02.982614+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "0.75": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.0": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.25": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.5": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "2.0": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        }
+      },
+      "fecha_cierre": "2026-09-14T15:05:49.028519+00:00",
+      "precio_cierre": 502.5306993756975,
+      "motivo_cierre": "stop",
+      "resultado_r": -1.0,
+      "pnl_bruto_eur": -50.0,
+      "costes_eur": {
+        "1_ticks": 0.925,
+        "2_ticks": 1.851,
+        "3_ticks": 2.776
+      },
+      "pnl_neto_eur": {
+        "1_ticks": -50.92,
+        "2_ticks": -51.85,
+        "3_ticks": -52.78
+      }
+    },
+    {
+      "id": "f7c09d56",
+      "ticker": "MSFT",
+      "estrategia_id": "BREAKOUT_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-14T15:05:49.028519+00:00",
+      "precio_entrada": 502.71,
+      "stop": 501.52430053710935,
+      "target": 503.8956994628906,
+      "riesgo_precio": 1.185699462890625,
+      "cantidad_teorica": 42.16920186343397,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 21198.88,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "MSFT",
+        "precio_actual": 502.71,
+        "atr": 1.185699462890625,
+        "minutos_desde_apertura": 100,
+        "return_since_open": 0.010472361809045205,
+        "return_5m": null,
+        "return_10m": 0.001573929214080616,
+        "return_15m": 0.0019732097123656978,
+        "speed": 0.05209999999999979,
+        "normalized_speed": 0.04394030834169802,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.007736943286017396,
+        "rango_sesion_pct": 0.014810809418184674,
+        "session_high": 502.7099914550781,
+        "session_low": 495.34161376953125,
+        "max_reciente_12v": 501.94000244140625,
+        "min_reciente_12v": 498.3900146484375,
+        "volatilidad_reciente": 0.0011889580097627882,
+        "rvol": 1.78602929309139,
+        "qqq_return_since_open": 0.004478983793993585,
+        "spy_return_since_open": -5.267197278491231e-05,
+        "relative_strength_qqq": 0.00599337801505162,
+        "timestamp": "2026-09-14T15:05:49.028519+00:00"
       }
     }
   ]
