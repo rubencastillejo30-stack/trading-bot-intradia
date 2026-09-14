@@ -1,8 +1,53 @@
 {
-  "actualizado_utc": "2026-09-14T16:25:37.171584+00:00",
+  "actualizado_utc": "2026-09-14T16:31:04.605088+00:00",
   "mercado_abierto": true,
   "modelo_version": "v0.2",
   "abiertas_esta_ejecucion": [
+    {
+      "id": "fed056e7",
+      "ticker": "AMZN",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-09-14T16:31:04.605088+00:00",
+      "precio_entrada": 253.28,
+      "stop": 253.73618765694755,
+      "target": 252.82381234305245,
+      "riesgo_precio": 0.4561876569475487,
+      "cantidad_teorica": 109.60401764168923,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 27760.51,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AMZN",
+        "precio_actual": 253.28,
+        "atr": 0.45618765694754465,
+        "minutos_desde_apertura": 185,
+        "return_since_open": -0.0003749383325111211,
+        "return_5m": 0.00011846001974324949,
+        "return_10m": -0.0005130170878443474,
+        "return_15m": -0.0029524024048375175,
+        "speed": -0.0005135135135135074,
+        "normalized_speed": -0.0011256628838876156,
+        "aceleracion": 0.0007498623314007302,
+        "distance_vwap_pct": 0.0008360557322297547,
+        "rango_sesion_pct": 0.017562888794246424,
+        "session_high": 255.1999969482422,
+        "session_low": 250.75,
+        "max_reciente_12v": 254.72000122070312,
+        "min_reciente_12v": 253.1999969482422,
+        "volatilidad_reciente": 0.0012110746481228127,
+        "rvol": 1.1960549910803953,
+        "qqq_return_since_open": 0.009768367717192694,
+        "spy_return_since_open": 0.004018429239748045,
+        "relative_strength_qqq": -0.010143306049703815,
+        "timestamp": "2026-09-14T16:31:04.605088+00:00"
+      }
+    }
+  ],
+  "cerradas_esta_ejecucion": [
     {
       "id": "247402f7",
       "ticker": "AMZN",
@@ -16,9 +61,9 @@
       "cantidad_teorica": 100.93508939454446,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 25616.32,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 1.191,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AMZN",
@@ -44,98 +89,53 @@
         "spy_return_since_open": 0.004334621906908698,
         "relative_strength_qqq": -0.008826062531308576,
         "timestamp": "2026-09-14T16:25:37.171584+00:00"
-      }
-    }
-  ],
-  "cerradas_esta_ejecucion": [
-    {
-      "id": "1c09adc6",
-      "ticker": "AMZN",
-      "estrategia_id": "RS_QQQ_V01",
-      "direccion": "SHORT",
-      "fecha_entrada": "2026-09-14T16:01:18.038639+00:00",
-      "precio_entrada": 253.585,
-      "stop": 254.08545122419085,
-      "target": 253.08454877580917,
-      "riesgo_precio": 0.5004512241908401,
-      "cantidad_teorica": 99.90983652970984,
-      "riesgo_eur": 50.0,
-      "capital_nocional_eur": 25335.64,
-      "estado": "cerrada",
-      "modelo_version": "v0.2",
-      "mfe_r": 0.33,
-      "mae_r": -1.009,
-      "features_en_entrada": {
-        "ticker": "AMZN",
-        "precio_actual": 253.585,
-        "atr": 0.5004512241908482,
-        "minutos_desde_apertura": 155,
-        "return_since_open": 0.0008288110508141155,
-        "return_5m": -0.00013840357465355613,
-        "return_10m": -0.0004927149523438201,
-        "return_15m": -0.0015807768446257642,
-        "speed": 0.0013548387096774708,
-        "normalized_speed": 0.0027072342801599384,
-        "aceleracion": 0.00021595684778596969,
-        "distance_vwap_pct": 0.002296733685281733,
-        "rango_sesion_pct": 0.017562888794246424,
-        "session_high": 255.1999969482422,
-        "session_low": 250.75,
-        "max_reciente_12v": 254.72000122070312,
-        "min_reciente_12v": 252.49000549316406,
-        "volatilidad_reciente": 0.0011804462489248407,
-        "rvol": 1.1731985791157307,
-        "qqq_return_since_open": 0.008801493885592704,
-        "spy_return_since_open": 0.003386043905426517,
-        "relative_strength_qqq": -0.007972682834778588,
-        "timestamp": "2026-09-14T16:01:18.038639+00:00"
       },
       "shadows": {
         "0.5": {
           "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
           "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
           "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
         },
         "1.5": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
         },
         "2.0": {
-          "resuelto": true,
-          "resultado_r": -1.0,
-          "motivo": "stop"
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
         }
       },
-      "fecha_cierre": "2026-09-14T16:25:37.171584+00:00",
-      "precio_cierre": 254.08545122419085,
-      "motivo_cierre": "stop",
-      "resultado_r": -1.0,
-      "pnl_bruto_eur": -50.0,
+      "fecha_cierre": "2026-09-14T16:31:04.605088+00:00",
+      "precio_cierre": 253.29463213239396,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
       "costes_eur": {
-        "1_ticks": 1.998,
-        "2_ticks": 3.996,
-        "3_ticks": 5.995
+        "1_ticks": 2.019,
+        "2_ticks": 4.037,
+        "3_ticks": 6.056
       },
       "pnl_neto_eur": {
-        "1_ticks": -52.0,
-        "2_ticks": -54.0,
-        "3_ticks": -55.99
+        "1_ticks": 47.98,
+        "2_ticks": 45.96,
+        "3_ticks": 43.94
       }
     }
   ],
