@@ -176758,9 +176758,9 @@
       "cantidad_teorica": 75.71739338542616,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 25893.08,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.909,
+      "mfe_r": 1.196,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AVGO",
@@ -176799,9 +176799,9 @@
           "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
           "resuelto": false,
@@ -176818,6 +176818,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-09-16T16:40:49.209436+00:00",
+      "precio_cierre": 341.30964974539626,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 1.514,
+        "2_ticks": 3.029,
+        "3_ticks": 4.543
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 48.49,
+        "2_ticks": 46.97,
+        "3_ticks": 45.46
       }
     },
     {
@@ -176833,10 +176848,10 @@
       "cantidad_teorica": 75.54980254208816,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 27255.8,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.099,
-      "mae_r": 0.0,
+      "mfe_r": 1.245,
+      "mae_r": -0.174,
       "features_en_entrada": {
         "ticker": "TSLA",
         "precio_actual": 360.766,
@@ -176864,19 +176879,19 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
           "resuelto": false,
@@ -176893,6 +176908,107 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-09-16T16:40:49.209436+00:00",
+      "precio_cierre": 361.4278150983538,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 1.511,
+        "2_ticks": 3.022,
+        "3_ticks": 4.533
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 48.49,
+        "2_ticks": 46.98,
+        "3_ticks": 45.47
+      }
+    },
+    {
+      "id": "6efcd43a",
+      "ticker": "TSLA",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-16T16:40:49.209436+00:00",
+      "precio_entrada": 361.59,
+      "stop": 360.8522484479631,
+      "target": 362.32775155203683,
+      "riesgo_precio": 0.7377515520368547,
+      "cantidad_teorica": 67.77349347751996,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 24506.22,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "TSLA",
+        "precio_actual": 361.59,
+        "atr": 0.7377515520368304,
+        "minutos_desde_apertura": 195,
+        "return_since_open": 0.010846799467744583,
+        "return_5m": null,
+        "return_10m": 0.00041499988263771215,
+        "return_15m": 0.002484947599294074,
+        "speed": 0.019897479717547947,
+        "normalized_speed": 0.02697043423712732,
+        "aceleracion": null,
+        "distance_vwap_pct": 4.675016352419512e-07,
+        "rango_sesion_pct": 0.028398982684808123,
+        "session_high": 365.0498962402344,
+        "session_low": 354.89129638671875,
+        "max_reciente_12v": 363.2130126953125,
+        "min_reciente_12v": 360.4400939941406,
+        "volatilidad_reciente": 0.0012720016998339992,
+        "rvol": 0.9085040669700064,
+        "qqq_return_since_open": 0.0027822949256757212,
+        "spy_return_since_open": 0.0005756350549293021,
+        "relative_strength_qqq": 0.008064504542068862,
+        "timestamp": "2026-09-16T16:40:49.209436+00:00"
+      }
+    },
+    {
+      "id": "09f6c5e1",
+      "ticker": "AVGO",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-09-16T16:40:49.209436+00:00",
+      "precio_entrada": 341.355,
+      "stop": 341.89496930803574,
+      "target": 340.8150306919643,
+      "riesgo_precio": 0.5399693080357224,
+      "cantidad_teorica": 92.59785557421382,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 31608.74,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AVGO",
+        "precio_actual": 341.355,
+        "atr": 0.5399693080357143,
+        "minutos_desde_apertura": 195,
+        "return_since_open": -0.003982846684877583,
+        "return_5m": null,
+        "return_10m": -0.0003824340023950157,
+        "return_15m": -0.0005123965095960026,
+        "speed": -0.007000006260015932,
+        "normalized_speed": -0.012963711373671154,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.0015593912620388084,
+        "rango_sesion_pct": 0.014297367760946351,
+        "session_high": 344.1499938964844,
+        "session_low": 339.25,
+        "max_reciente_12v": 342.9049987792969,
+        "min_reciente_12v": 341.17999267578125,
+        "volatilidad_reciente": 0.0008835064819659043,
+        "rvol": 0.8278583443420484,
+        "qqq_return_since_open": 0.0027822949256757212,
+        "spy_return_since_open": 0.0005756350549293021,
+        "relative_strength_qqq": -0.006765141610553305,
+        "timestamp": "2026-09-16T16:40:49.209436+00:00"
       }
     }
   ]
