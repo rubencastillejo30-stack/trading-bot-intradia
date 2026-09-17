@@ -1,10 +1,101 @@
 {
-  "actualizado_utc": "2026-09-17T15:45:48.070326+00:00",
+  "actualizado_utc": "2026-09-17T15:50:55.431356+00:00",
   "mercado_abierto": true,
   "modelo_version": "v0.2",
   "abiertas_esta_ejecucion": [],
-  "cerradas_esta_ejecucion": [],
-  "n_abiertas_total": 7,
-  "riesgo_ocupado_eur": 350.0,
+  "cerradas_esta_ejecucion": [
+    {
+      "id": "029459cc",
+      "ticker": "AAPL",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-09-17T14:40:47.793872+00:00",
+      "precio_entrada": 332.67,
+      "stop": 333.8037454659598,
+      "target": 331.5362545340402,
+      "riesgo_precio": 1.1337454659598052,
+      "cantidad_teorica": 44.10160966568545,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 14671.28,
+      "estado": "cerrada",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.582,
+      "mae_r": -1.35,
+      "features_en_entrada": {
+        "ticker": "AAPL",
+        "precio_actual": 332.67,
+        "atr": 1.1337454659598214,
+        "minutos_desde_apertura": 75,
+        "return_since_open": -0.0062284502170247835,
+        "return_5m": null,
+        "return_10m": 0.00015033637047245918,
+        "return_15m": -0.0013808569509501378,
+        "speed": -0.027800065104166456,
+        "normalized_speed": -0.02452055239809149,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.00022658630500024145,
+        "rango_sesion_pct": 0.016090249362490715,
+        "session_high": 335.5799865722656,
+        "session_low": 330.1936950683594,
+        "max_reciente_12v": 333.8800048828125,
+        "min_reciente_12v": 330.1936950683594,
+        "volatilidad_reciente": 0.001724582152294307,
+        "rvol": 0.7302458328748799,
+        "qqq_return_since_open": 0.0006220718914966561,
+        "spy_return_since_open": -0.0015855623847818023,
+        "relative_strength_qqq": -0.00685052210852144,
+        "timestamp": "2026-09-17T14:40:47.793872+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
+        },
+        "0.75": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.0": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.25": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.5": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "2.0": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        }
+      },
+      "fecha_cierre": "2026-09-17T15:50:55.431356+00:00",
+      "precio_cierre": 333.8037454659598,
+      "motivo_cierre": "stop",
+      "resultado_r": -1.0,
+      "pnl_bruto_eur": -50.0,
+      "costes_eur": {
+        "1_ticks": 0.882,
+        "2_ticks": 1.764,
+        "3_ticks": 2.646
+      },
+      "pnl_neto_eur": {
+        "1_ticks": -50.88,
+        "2_ticks": -51.76,
+        "3_ticks": -52.65
+      }
+    }
+  ],
+  "n_abiertas_total": 6,
+  "riesgo_ocupado_eur": 300.0,
   "riesgo_maximo_simultaneo_eur": 500.0
 }
