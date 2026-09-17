@@ -370718,6 +370718,92 @@
         "timestamp": "2026-09-17T16:31:03.223019+00:00"
       },
       "decision": "ejecutada"
+    },
+    {
+      "id": "d7a69e81",
+      "timestamp": "2026-09-17T16:35:41.720995+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "MSFT",
+      "señal": {
+        "ticker": "MSFT",
+        "estrategia_id": "RS_QQQ_V01",
+        "direccion": "SHORT",
+        "precio_entrada": 495.39,
+        "stop": 496.1750843157087,
+        "target": 494.60491568429126,
+        "atr": 0.7850843157087054,
+        "motivo": "fuerza relativa vs QQQ=-0.517% <= -0.500%"
+      },
+      "features_en_entrada": {
+        "ticker": "MSFT",
+        "precio_actual": 495.39,
+        "atr": 0.7850843157087054,
+        "minutos_desde_apertura": 190,
+        "return_since_open": -0.004831332903826979,
+        "return_5m": null,
+        "return_10m": 0.00016151994064439457,
+        "return_15m": -0.0006858793673831798,
+        "speed": -0.012657965409128362,
+        "normalized_speed": -0.016123064944561855,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.0024576173592297497,
+        "rango_sesion_pct": 0.016462614335546032,
+        "session_high": 501.4700012207031,
+        "session_low": 493.2749938964844,
+        "max_reciente_12v": 497.6463928222656,
+        "min_reciente_12v": 495.05999755859375,
+        "volatilidad_reciente": 0.0006320475454418775,
+        "rvol": 0.9063800449099259,
+        "qqq_return_since_open": 0.0003351584923765305,
+        "spy_return_since_open": -0.0013889766424466377,
+        "relative_strength_qqq": -0.00516649139620351,
+        "timestamp": "2026-09-17T16:35:41.720995+00:00"
+      },
+      "decision": "rechazada",
+      "motivo_rechazo": "ya_hay_posicion_abierta_en_este_ticker"
+    },
+    {
+      "id": "5c8ae791",
+      "timestamp": "2026-09-17T16:35:41.720995+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "AMD",
+      "señal": {
+        "ticker": "AMD",
+        "estrategia_id": "RS_QQQ_V01",
+        "direccion": "LONG",
+        "precio_entrada": 549.835,
+        "stop": 548.0529652622769,
+        "target": 551.6170347377232,
+        "atr": 1.7820347377232142,
+        "motivo": "fuerza relativa vs QQQ=2.951% >= +0.500%"
+      },
+      "features_en_entrada": {
+        "ticker": "AMD",
+        "precio_actual": 549.835,
+        "atr": 1.7820347377232142,
+        "minutos_desde_apertura": 190,
+        "return_since_open": 0.029846366093400523,
+        "return_5m": null,
+        "return_10m": -0.0007178461421049054,
+        "return_15m": -0.0007542026351657904,
+        "speed": 0.08386829255756598,
+        "normalized_speed": 0.0470632198027289,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.018483364177447056,
+        "rango_sesion_pct": 0.04452136619057189,
+        "session_high": 551.4199829101562,
+        "session_low": 527.6500244140625,
+        "max_reciente_12v": 551.4199829101562,
+        "min_reciente_12v": 544.8099975585938,
+        "volatilidad_reciente": 0.002410220985781149,
+        "rvol": 1.415196402392004,
+        "qqq_return_since_open": 0.0003351584923765305,
+        "spy_return_since_open": -0.0013889766424466377,
+        "relative_strength_qqq": 0.029511207601023992,
+        "timestamp": "2026-09-17T16:35:41.720995+00:00"
+      },
+      "decision": "rechazada",
+      "motivo_rechazo": "ya_hay_posicion_abierta_en_este_ticker"
     }
   ]
 }
