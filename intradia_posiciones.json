@@ -195447,7 +195447,7 @@
       "capital_nocional_eur": 28911.23,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.621,
+      "mfe_r": 0.82,
       "mae_r": -0.972,
       "features_en_entrada": {
         "ticker": "MSFT",
@@ -195481,9 +195481,9 @@
           "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
           "resuelto": false,
@@ -197367,8 +197367,8 @@
       "capital_nocional_eur": 24302.8,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.027,
-      "mae_r": -0.576,
+      "mfe_r": 0.247,
+      "mae_r": -0.741,
       "features_en_entrada": {
         "ticker": "AVGO",
         "precio_actual": 354.36,
@@ -197440,10 +197440,10 @@
       "cantidad_teorica": 135.9482702417587,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 34473.08,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
-      "mae_r": -0.132,
+      "mfe_r": 0.15,
+      "mae_r": -1.101,
       "features_en_entrada": {
         "ticker": "AMZN",
         "precio_actual": 253.575,
@@ -197471,35 +197471,50 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.25": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "2.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         }
+      },
+      "fecha_cierre": "2026-09-18T16:40:49.154444+00:00",
+      "precio_cierre": 253.20721304757254,
+      "motivo_cierre": "stop",
+      "resultado_r": -1.0,
+      "pnl_bruto_eur": -50.0,
+      "costes_eur": {
+        "1_ticks": 2.719,
+        "2_ticks": 5.438,
+        "3_ticks": 8.157
+      },
+      "pnl_neto_eur": {
+        "1_ticks": -52.72,
+        "2_ticks": -55.44,
+        "3_ticks": -58.16
       }
     },
     {
@@ -197517,7 +197532,7 @@
       "capital_nocional_eur": 20589.05,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.216,
+      "mfe_r": 0.494,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "TSLA",
@@ -197593,7 +197608,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": 0.0,
+      "mae_r": -0.967,
       "features_en_entrada": {
         "ticker": "NVDA",
         "precio_actual": 219.84,
@@ -197618,6 +197633,81 @@
         "spy_return_since_open": -0.0028831978185730467,
         "relative_strength_qqq": 0.005638241409635092,
         "timestamp": "2026-09-18T16:35:40.378145+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "bff20b72",
+      "ticker": "AMZN",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-18T16:40:49.154444+00:00",
+      "precio_entrada": 253.44,
+      "stop": 253.02792005266463,
+      "target": 253.85207994733537,
+      "riesgo_precio": 0.41207994733537134,
+      "cantidad_teorica": 121.33567848499915,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 30751.31,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AMZN",
+        "precio_actual": 253.44,
+        "atr": 0.41207994733537945,
+        "minutos_desde_apertura": 195,
+        "return_since_open": 0.0022937569732202068,
+        "return_5m": null,
+        "return_10m": -3.944347351569899e-05,
+        "return_15m": -0.0007495026742426747,
+        "speed": 0.00297435584435095,
+        "normalized_speed": 0.007217909688602759,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.0012102801636298675,
+        "rango_sesion_pct": 0.014039341075693334,
+        "session_high": 255.42999267578125,
+        "session_low": 251.8800048828125,
+        "max_reciente_12v": 253.90499877929688,
+        "min_reciente_12v": 252.99049377441406,
+        "volatilidad_reciente": 0.0007683212167395538,
+        "rvol": 1.5661198887235876,
+        "qqq_return_since_open": -0.0035474496867962113,
+        "spy_return_since_open": -0.0030605365715881128,
+        "relative_strength_qqq": 0.005841206660016418,
+        "timestamp": "2026-09-18T16:40:49.154444+00:00"
       }
     }
   ]
