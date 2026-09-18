@@ -200937,8 +200937,8 @@
       "capital_nocional_eur": 33036.24,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.655,
-      "mae_r": -0.424,
+      "mfe_r": 0.97,
+      "mae_r": -0.806,
       "features_en_entrada": {
         "ticker": "AMD",
         "precio_actual": 544.89,
@@ -200971,9 +200971,9 @@
           "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
           "resuelto": false,
@@ -201012,7 +201012,7 @@
       "capital_nocional_eur": 34001.46,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.449,
+      "mfe_r": 0.631,
       "mae_r": -0.918,
       "features_en_entrada": {
         "ticker": "AVGO",
@@ -201041,9 +201041,9 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
           "resuelto": false,
@@ -201087,7 +201087,7 @@
       "capital_nocional_eur": 48039.84,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.029,
+      "mfe_r": 0.514,
       "mae_r": -0.857,
       "features_en_entrada": {
         "ticker": "AAPL",
@@ -201116,9 +201116,9 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
           "resuelto": false,
@@ -201250,9 +201250,9 @@
       "cantidad_teorica": 167.51516302303529,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 42597.43,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.603,
+      "mfe_r": 1.474,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AMZN",
@@ -201278,6 +201278,96 @@
         "spy_return_since_open": -0.00020355474408018104,
         "relative_strength_qqq": 0.005122419278854817,
         "timestamp": "2026-09-18T19:15:48.432411+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
+        },
+        "0.75": {
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
+        },
+        "1.0": {
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
+        },
+        "1.25": {
+          "resuelto": true,
+          "resultado_r": 1.25,
+          "motivo": "target"
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      },
+      "fecha_cierre": "2026-09-18T19:25:42.042853+00:00",
+      "precio_cierre": 254.58848044259207,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 3.35,
+        "2_ticks": 6.701,
+        "3_ticks": 10.051
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 46.65,
+        "2_ticks": 43.3,
+        "3_ticks": 39.95
+      }
+    },
+    {
+      "id": "22c1cc29",
+      "ticker": "TSLA",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-09-18T19:20:55.311761+00:00",
+      "precio_entrada": 364.45,
+      "stop": 365.1588710239955,
+      "target": 363.74112897600446,
+      "riesgo_precio": 0.7088710239955276,
+      "cantidad_teorica": 70.53469292365301,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 25706.37,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.578,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "TSLA",
+        "precio_actual": 364.45,
+        "atr": 0.7088710239955357,
+        "minutos_desde_apertura": 355,
+        "return_since_open": -0.013079502803463705,
+        "return_5m": null,
+        "return_10m": 0.00016461853824489836,
+        "return_15m": 0.0010712587046683986,
+        "speed": -0.013605630364216581,
+        "normalized_speed": -0.019193379195454694,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.0013081342579304555,
+        "rango_sesion_pct": 0.027483174961966658,
+        "session_high": 370.8999938964844,
+        "session_low": 360.7510070800781,
+        "max_reciente_12v": 364.5799865722656,
+        "min_reciente_12v": 362.75,
+        "volatilidad_reciente": 0.0012804797010738734,
+        "rvol": 1.3132576136582597,
+        "qqq_return_since_open": 0.0006121006412664887,
+        "spy_return_since_open": -0.00023642494694464666,
+        "relative_strength_qqq": -0.013691603444730194,
+        "timestamp": "2026-09-18T19:20:55.311761+00:00"
       },
       "shadows": {
         "0.5": {
@@ -201313,49 +201403,6 @@
       }
     },
     {
-      "id": "22c1cc29",
-      "ticker": "TSLA",
-      "estrategia_id": "RS_QQQ_V01",
-      "direccion": "SHORT",
-      "fecha_entrada": "2026-09-18T19:20:55.311761+00:00",
-      "precio_entrada": 364.45,
-      "stop": 365.1588710239955,
-      "target": 363.74112897600446,
-      "riesgo_precio": 0.7088710239955276,
-      "cantidad_teorica": 70.53469292365301,
-      "riesgo_eur": 50.0,
-      "capital_nocional_eur": 25706.37,
-      "estado": "abierta",
-      "modelo_version": "v0.2",
-      "mfe_r": 0.0,
-      "mae_r": 0.0,
-      "features_en_entrada": {
-        "ticker": "TSLA",
-        "precio_actual": 364.45,
-        "atr": 0.7088710239955357,
-        "minutos_desde_apertura": 355,
-        "return_since_open": -0.013079502803463705,
-        "return_5m": null,
-        "return_10m": 0.00016461853824489836,
-        "return_15m": 0.0010712587046683986,
-        "speed": -0.013605630364216581,
-        "normalized_speed": -0.019193379195454694,
-        "aceleracion": null,
-        "distance_vwap_pct": -0.0013081342579304555,
-        "rango_sesion_pct": 0.027483174961966658,
-        "session_high": 370.8999938964844,
-        "session_low": 360.7510070800781,
-        "max_reciente_12v": 364.5799865722656,
-        "min_reciente_12v": 362.75,
-        "volatilidad_reciente": 0.0012804797010738734,
-        "rvol": 1.3132576136582597,
-        "qqq_return_since_open": 0.0006121006412664887,
-        "spy_return_since_open": -0.00023642494694464666,
-        "relative_strength_qqq": -0.013691603444730194,
-        "timestamp": "2026-09-18T19:20:55.311761+00:00"
-      }
-    },
-    {
       "id": "33415212",
       "ticker": "META",
       "estrategia_id": "RS_QQQ_V01",
@@ -201370,7 +201417,7 @@
       "capital_nocional_eur": 35949.32,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 0.699,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "META",
@@ -201396,6 +201443,81 @@
         "spy_return_since_open": -0.00023642494694464666,
         "relative_strength_qqq": -0.02269213203595477,
         "timestamp": "2026-09-18T19:20:55.311761+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "9bfdb74c",
+      "ticker": "AMZN",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-18T19:25:42.042853+00:00",
+      "precio_entrada": 254.615,
+      "stop": 254.30231253487725,
+      "target": 254.92768746512277,
+      "riesgo_precio": 0.3126874651227638,
+      "cantidad_teorica": 159.90407540119836,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 40713.98,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AMZN",
+        "precio_actual": 254.615,
+        "atr": 0.31268746512276785,
+        "minutos_desde_apertura": 360,
+        "return_since_open": 0.0069405971107026065,
+        "return_5m": null,
+        "return_10m": -0.000451441642004502,
+        "return_15m": 0.0008057715299705226,
+        "speed": 0.0048749983045790184,
+        "normalized_speed": 0.015590641929522147,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.005515713661940455,
+        "rango_sesion_pct": 0.014039341075693334,
+        "session_high": 255.42999267578125,
+        "session_low": 251.8800048828125,
+        "max_reciente_12v": 254.8000030517578,
+        "min_reciente_12v": 253.22999572753906,
+        "volatilidad_reciente": 0.0010342507949242469,
+        "rvol": 1.224973590893625,
+        "qqq_return_since_open": 0.0006398655059765002,
+        "spy_return_since_open": -0.0003743194565224428,
+        "relative_strength_qqq": 0.006300731604726106,
+        "timestamp": "2026-09-18T19:25:42.042853+00:00"
       }
     }
   ]
