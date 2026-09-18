@@ -198028,7 +198028,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.628,
-      "mae_r": -0.314,
+      "mae_r": -0.492,
       "features_en_entrada": {
         "ticker": "NVDA",
         "precio_actual": 219.94,
@@ -198192,7 +198192,7 @@
       "capital_nocional_eur": 25804.93,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.638,
+      "mfe_r": 0.969,
       "mae_r": -0.046,
       "features_en_entrada": {
         "ticker": "META",
@@ -198226,9 +198226,9 @@
           "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
           "resuelto": false,
@@ -198267,8 +198267,8 @@
       "capital_nocional_eur": 47002.34,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.659,
-      "mae_r": 0.0,
+      "mfe_r": 0.715,
+      "mae_r": -0.098,
       "features_en_entrada": {
         "ticker": "AAPL",
         "precio_actual": 335.315,
@@ -198325,6 +198325,49 @@
           "resultado_r": null,
           "motivo": null
         }
+      }
+    },
+    {
+      "id": "e6fb4a9c",
+      "ticker": "MSFT",
+      "estrategia_id": "BREAKOUT_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-18T17:35:40.475097+00:00",
+      "precio_entrada": 494.85,
+      "stop": 494.34898856026786,
+      "target": 495.3510114397322,
+      "riesgo_precio": 0.5010114397321672,
+      "cantidad_teorica": 99.79812043159974,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 49385.1,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "MSFT",
+        "precio_actual": 494.85,
+        "atr": 0.5010114397321429,
+        "minutos_desde_apertura": 250,
+        "return_since_open": -0.00526665168607976,
+        "return_5m": null,
+        "return_10m": 0.0010460850830025237,
+        "return_15m": 0.001234237976849517,
+        "speed": -0.01048000488281241,
+        "normalized_speed": -0.020917695788374338,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.0006700510720883252,
+        "rango_sesion_pct": 0.0151767700051107,
+        "session_high": 498.6499938964844,
+        "session_low": 491.1000061035156,
+        "max_reciente_12v": 494.5899963378906,
+        "min_reciente_12v": 493.1199951171875,
+        "volatilidad_reciente": 0.0005095242905165814,
+        "rvol": 1.3275970055202508,
+        "qqq_return_since_open": -0.0022953986317101327,
+        "spy_return_since_open": -0.0022198610905227456,
+        "relative_strength_qqq": -0.002971253054369627,
+        "timestamp": "2026-09-18T17:35:40.475097+00:00"
       }
     }
   ]
