@@ -220822,7 +220822,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.879,
-      "mae_r": -0.359,
+      "mae_r": -0.455,
       "features_en_entrada": {
         "ticker": "AVGO",
         "precio_actual": 363.17,
@@ -223057,7 +223057,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.962,
-      "mae_r": -0.503,
+      "mae_r": -0.817,
       "features_en_entrada": {
         "ticker": "AMZN",
         "precio_actual": 254.51,
@@ -223219,9 +223219,9 @@
       "cantidad_teorica": 25.57282886932634,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 15737.01,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.936,
+      "mfe_r": 1.135,
       "mae_r": -0.082,
       "features_en_entrada": {
         "ticker": "AMD",
@@ -223260,9 +223260,9 @@
           "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
           "resuelto": false,
@@ -223279,6 +223279,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-09-22T17:10:49.673457+00:00",
+      "precio_cierre": 617.3352001953125,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 0.511,
+        "2_ticks": 1.023,
+        "3_ticks": 1.534
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 49.49,
+        "2_ticks": 48.98,
+        "3_ticks": 48.47
       }
     },
     {
@@ -223296,7 +223311,7 @@
       "capital_nocional_eur": 11020.23,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.305,
+      "mfe_r": 0.945,
       "mae_r": -0.744,
       "features_en_entrada": {
         "ticker": "META",
@@ -223325,14 +223340,14 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
           "resuelto": false,
@@ -223371,7 +223386,7 @@
       "capital_nocional_eur": 29123.78,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.575,
+      "mfe_r": 0.586,
       "mae_r": -0.349,
       "features_en_entrada": {
         "ticker": "MSFT",
@@ -223446,7 +223461,7 @@
       "capital_nocional_eur": 27729.1,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.38,
+      "mfe_r": 0.513,
       "mae_r": -0.748,
       "features_en_entrada": {
         "ticker": "TSLA",
@@ -223475,9 +223490,9 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
           "resuelto": false,
@@ -223611,7 +223626,7 @@
       "capital_nocional_eur": 36830.96,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 0.263,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "NVDA",
@@ -223637,6 +223652,81 @@
         "spy_return_since_open": -0.0007881430482392648,
         "relative_strength_qqq": 0.006691142102009051,
         "timestamp": "2026-09-22T17:05:42.954441+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "fd5332ae",
+      "ticker": "AMD",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-22T17:10:49.673457+00:00",
+      "precio_entrada": 617.47,
+      "stop": 615.7378876604353,
+      "target": 619.2021123395648,
+      "riesgo_precio": 1.7321123395647646,
+      "cantidad_teorica": 28.866487962647803,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 17824.19,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AMD",
+        "precio_actual": 617.47,
+        "atr": 1.7321123395647322,
+        "minutos_desde_apertura": 225,
+        "return_since_open": 0.01708124663331434,
+        "return_5m": null,
+        "return_10m": 0.00030775449408504407,
+        "return_15m": 0.0014921940235934628,
+        "speed": 0.046088997395833456,
+        "normalized_speed": 0.026608549770747145,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.0021313541100366016,
+        "rango_sesion_pct": 0.025840060337441687,
+        "session_high": 622.0,
+        "session_low": 606.3125,
+        "max_reciente_12v": 617.5986938476562,
+        "min_reciente_12v": 612.6599731445312,
+        "volatilidad_reciente": 0.0023329255728532193,
+        "rvol": 0.8896324340320603,
+        "qqq_return_since_open": 0.005796159110741161,
+        "spy_return_since_open": -0.0008785882784874133,
+        "relative_strength_qqq": 0.011285087522573178,
+        "timestamp": "2026-09-22T17:10:49.673457+00:00"
       }
     }
   ]
