@@ -1,10 +1,101 @@
 {
-  "actualizado_utc": "2026-09-22T15:20:56.679915+00:00",
+  "actualizado_utc": "2026-09-22T15:25:46.135607+00:00",
   "mercado_abierto": true,
   "modelo_version": "v0.2",
   "abiertas_esta_ejecucion": [],
-  "cerradas_esta_ejecucion": [],
-  "n_abiertas_total": 6,
-  "riesgo_ocupado_eur": 300.0,
+  "cerradas_esta_ejecucion": [
+    {
+      "id": "b9c7fdd5",
+      "ticker": "AMZN",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-09-22T15:15:49.239060+00:00",
+      "precio_entrada": 255.465,
+      "stop": 255.98716012137277,
+      "target": 254.94283987862724,
+      "riesgo_precio": 0.5221601213727638,
+      "cantidad_teorica": 95.75606782944193,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 24462.32,
+      "estado": "cerrada",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.278,
+      "mae_r": -1.025,
+      "features_en_entrada": {
+        "ticker": "AMZN",
+        "precio_actual": 255.465,
+        "atr": 0.5221601213727679,
+        "minutos_desde_apertura": 110,
+        "return_since_open": 0.0003328182142783298,
+        "return_5m": null,
+        "return_10m": 0.00015658979255883665,
+        "return_15m": -0.0006649891857094525,
+        "speed": 0.0007726828835227583,
+        "normalized_speed": 0.0014797814921050688,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.004400120190413478,
+        "rango_sesion_pct": 0.020400997001538666,
+        "session_high": 259.0,
+        "session_low": 253.7899932861328,
+        "max_reciente_12v": 257.3399963378906,
+        "min_reciente_12v": 255.3105010986328,
+        "volatilidad_reciente": 0.0008635529345282591,
+        "rvol": 0.9188567780226453,
+        "qqq_return_since_open": 0.005485796201942117,
+        "spy_return_since_open": -0.0005878545697471926,
+        "relative_strength_qqq": -0.005152977987663787,
+        "timestamp": "2026-09-22T15:15:49.239060+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "0.75": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.0": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.25": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.5": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "2.0": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        }
+      },
+      "fecha_cierre": "2026-09-22T15:25:46.135607+00:00",
+      "precio_cierre": 255.98716012137277,
+      "motivo_cierre": "stop",
+      "resultado_r": -1.0,
+      "pnl_bruto_eur": -50.0,
+      "costes_eur": {
+        "1_ticks": 1.915,
+        "2_ticks": 3.83,
+        "3_ticks": 5.745
+      },
+      "pnl_neto_eur": {
+        "1_ticks": -51.91,
+        "2_ticks": -53.83,
+        "3_ticks": -55.74
+      }
+    }
+  ],
+  "n_abiertas_total": 5,
+  "riesgo_ocupado_eur": 250.0,
   "riesgo_maximo_simultaneo_eur": 500.0
 }
