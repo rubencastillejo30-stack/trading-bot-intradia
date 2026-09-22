@@ -30,19 +30,23 @@ def cargar_json(path: str, default):
     return default
 
 
-def metricas(pnls: np.ndarray) -> dict:
-    if len(pnls) == 0:
+def metricas(rs: np.ndarray) -> dict:
+    # rs: resultado_r por operación (múltiplos de R). pnl_neto_eur en las
+    # posiciones es un dict {1_ticks, 2_ticks, 3_ticks}, no un escalar, así
+    # que no es agregable directamente -- se usa R, igual que
+    # intradia_resumen_diario.py para evolución acumulada.
+    if len(rs) == 0:
         return {"n": 0}
-    ganancias = pnls[pnls > 0].sum()
-    perdidas = -pnls[pnls < 0].sum()
-    equity = np.cumsum(pnls)
+    ganancias = rs[rs > 0].sum()
+    perdidas = -rs[rs < 0].sum()
+    equity = np.cumsum(rs)
     peak = np.maximum.accumulate(equity)
     dd = (equity - peak).min() if len(equity) else 0.0
     return {
-        "n": len(pnls), "pnl_neto_eur": round(pnls.sum(), 2), "expectancy_eur": round(pnls.mean(), 3),
-        "win_rate": round((pnls > 0).mean() * 100, 1),
+        "n": len(rs), "suma_r": round(rs.sum(), 2), "expectancy_r": round(rs.mean(), 3),
+        "win_rate_pct": round((rs > 0).mean() * 100, 1),
         "profit_factor": round(ganancias / perdidas, 2) if perdidas > 0 else float("inf"),
-        "max_drawdown_eur": round(dd, 2),
+        "max_drawdown_r": round(dd, 2),
     }
 
 
@@ -68,7 +72,7 @@ def main() -> None:
             continue
         dias_ventana = set(dias_unicos[-ventana:])
         sub = df[df["fecha_dia"].isin(dias_ventana)]
-        m = metricas(sub["pnl_neto_eur"].values)
+        m = metricas(sub["resultado_r"].values)
         print(f"--- Ventana {ventana} días ({len(dias_ventana)} sesiones reales) ---")
         for k, v in m.items():
             print(f"  {k}: {v}")
@@ -77,7 +81,7 @@ def main() -> None:
     # comparación por versión de modelo
     print("--- Comparación por versión de modelo ---")
     for version, grupo in df.groupby("modelo_version"):
-        m = metricas(grupo["pnl_neto_eur"].values)
+        m = metricas(grupo["resultado_r"].values)
         print(f"  {version}: {m}")
 
     # señales ejecutadas vs rechazadas (para el análisis "qué rechazamos y qué habría pasado")
