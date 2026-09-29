@@ -525555,6 +525555,92 @@
         "timestamp": "2026-09-29T14:25:41.355856+00:00"
       },
       "decision": "ejecutada"
+    },
+    {
+      "id": "e6c320ad",
+      "timestamp": "2026-09-29T14:31:07.152692+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "AVGO",
+      "señal": {
+        "ticker": "AVGO",
+        "estrategia_id": "REVERSAL_V01",
+        "direccion": "SHORT",
+        "precio_entrada": 361.203,
+        "stop": 363.68845401436937,
+        "target": 358.7175459856306,
+        "atr": 2.4854540143694197,
+        "motivo": "precio cerca del máximo de sesión y última vela negativa (-0.027%)"
+      },
+      "features_en_entrada": {
+        "ticker": "AVGO",
+        "precio_actual": 361.203,
+        "atr": 2.4854540143694197,
+        "minutos_desde_apertura": 65,
+        "return_since_open": 0.0063327316485137786,
+        "return_5m": -0.0002684411742198689,
+        "return_10m": 0.002255848715330133,
+        "return_15m": 0.0025201197308486467,
+        "speed": 0.03496934344951884,
+        "normalized_speed": 0.014069599858756932,
+        "aceleracion": -0.0027934088690627634,
+        "distance_vwap_pct": 0.006280066782224841,
+        "rango_sesion_pct": 0.0157409591258469,
+        "session_high": 361.4399108886719,
+        "session_low": 355.7900085449219,
+        "max_reciente_12v": 361.4399108886719,
+        "min_reciente_12v": 357.1000061035156,
+        "volatilidad_reciente": 0.0030813953092274416,
+        "rvol": 1.2638468250132235,
+        "qqq_return_since_open": -0.0007768650719534032,
+        "spy_return_since_open": -0.0017344353509937127,
+        "relative_strength_qqq": 0.007109596720467182,
+        "timestamp": "2026-09-29T14:31:07.152692+00:00"
+      },
+      "decision": "rechazada",
+      "motivo_rechazo": "ya_hay_posicion_abierta_en_este_ticker"
+    },
+    {
+      "id": "23bfa36e",
+      "timestamp": "2026-09-29T14:31:07.152692+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "AVGO",
+      "señal": {
+        "ticker": "AVGO",
+        "estrategia_id": "RS_QQQ_V01",
+        "direccion": "LONG",
+        "precio_entrada": 361.203,
+        "stop": 358.7175459856306,
+        "target": 363.68845401436937,
+        "atr": 2.4854540143694197,
+        "motivo": "fuerza relativa vs QQQ=0.711% >= +0.500%"
+      },
+      "features_en_entrada": {
+        "ticker": "AVGO",
+        "precio_actual": 361.203,
+        "atr": 2.4854540143694197,
+        "minutos_desde_apertura": 65,
+        "return_since_open": 0.0063327316485137786,
+        "return_5m": -0.0002684411742198689,
+        "return_10m": 0.002255848715330133,
+        "return_15m": 0.0025201197308486467,
+        "speed": 0.03496934344951884,
+        "normalized_speed": 0.014069599858756932,
+        "aceleracion": -0.0027934088690627634,
+        "distance_vwap_pct": 0.006280066782224841,
+        "rango_sesion_pct": 0.0157409591258469,
+        "session_high": 361.4399108886719,
+        "session_low": 355.7900085449219,
+        "max_reciente_12v": 361.4399108886719,
+        "min_reciente_12v": 357.1000061035156,
+        "volatilidad_reciente": 0.0030813953092274416,
+        "rvol": 1.2638468250132235,
+        "qqq_return_since_open": -0.0007768650719534032,
+        "spy_return_since_open": -0.0017344353509937127,
+        "relative_strength_qqq": 0.007109596720467182,
+        "timestamp": "2026-09-29T14:31:07.152692+00:00"
+      },
+      "decision": "rechazada",
+      "motivo_rechazo": "ya_hay_posicion_abierta_en_este_ticker"
     }
   ]
 }
