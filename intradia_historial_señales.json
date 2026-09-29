@@ -527007,6 +527007,92 @@
         "timestamp": "2026-09-29T15:25:53.603559+00:00"
       },
       "decision": "ejecutada"
+    },
+    {
+      "id": "71b5d522",
+      "timestamp": "2026-09-29T15:31:10.577056+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "AAPL",
+      "señal": {
+        "ticker": "AAPL",
+        "estrategia_id": "REVERSAL_V01",
+        "direccion": "LONG",
+        "precio_entrada": 331.74,
+        "stop": 331.15465759277345,
+        "target": 332.3253424072266,
+        "atr": 0.5853424072265625,
+        "motivo": "precio cerca del mínimo de sesión y última vela positiva (0.030%)"
+      },
+      "features_en_entrada": {
+        "ticker": "AAPL",
+        "precio_actual": 331.74,
+        "atr": 0.5853424072265625,
+        "minutos_desde_apertura": 125,
+        "return_since_open": -0.004405315135078247,
+        "return_5m": 0.00030148759843862116,
+        "return_10m": -3.014318010552408e-05,
+        "return_15m": -9.03909776801548e-05,
+        "speed": -0.011743085937499927,
+        "normalized_speed": -0.02006190870936616,
+        "aceleracion": 0.0006330184245501025,
+        "distance_vwap_pct": -0.0029817340114210167,
+        "rango_sesion_pct": 0.00908352716238301,
+        "session_high": 334.5367126464844,
+        "session_low": 331.510009765625,
+        "max_reciente_12v": 332.94000244140625,
+        "min_reciente_12v": 331.510009765625,
+        "volatilidad_reciente": 0.001083933531059547,
+        "rvol": 1.205152947812201,
+        "qqq_return_since_open": -0.004916984450741735,
+        "spy_return_since_open": -0.0050207171541155615,
+        "relative_strength_qqq": 0.0005116693156634877,
+        "timestamp": "2026-09-29T15:31:10.577056+00:00"
+      },
+      "decision": "rechazada",
+      "motivo_rechazo": "ya_hay_posicion_abierta_en_este_ticker"
+    },
+    {
+      "id": "f2cadc23",
+      "timestamp": "2026-09-29T15:31:10.577056+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "MSFT",
+      "señal": {
+        "ticker": "MSFT",
+        "estrategia_id": "RS_QQQ_V01",
+        "direccion": "LONG",
+        "precio_entrada": 508.64,
+        "stop": 507.3560164969308,
+        "target": 509.92398350306917,
+        "atr": 1.2839835030691964,
+        "motivo": "fuerza relativa vs QQQ=0.618% >= +0.500%"
+      },
+      "features_en_entrada": {
+        "ticker": "MSFT",
+        "precio_actual": 508.64,
+        "atr": 1.2839835030691964,
+        "minutos_desde_apertura": 125,
+        "return_since_open": 0.0012598425196850283,
+        "return_5m": -5.900372921952002e-05,
+        "return_10m": 0.0005114188494637073,
+        "return_15m": 0.00046223231728115266,
+        "speed": 0.005119999999999891,
+        "normalized_speed": 0.00398759017367528,
+        "aceleracion": -0.0006294599669481871,
+        "distance_vwap_pct": 0.0015645600989440866,
+        "rango_sesion_pct": 0.022126025102269933,
+        "session_high": 513.6400146484375,
+        "session_low": 502.3999938964844,
+        "max_reciente_12v": 513.6400146484375,
+        "min_reciente_12v": 507.6600036621094,
+        "volatilidad_reciente": 0.0013391778663132594,
+        "rvol": 0.5988450140987943,
+        "qqq_return_since_open": -0.004916984450741735,
+        "spy_return_since_open": -0.0050207171541155615,
+        "relative_strength_qqq": 0.006176826970426763,
+        "timestamp": "2026-09-29T15:31:10.577056+00:00"
+      },
+      "decision": "rechazada",
+      "motivo_rechazo": "ya_hay_posicion_abierta_en_este_ticker"
     }
   ]
 }
