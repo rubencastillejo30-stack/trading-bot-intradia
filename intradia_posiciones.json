@@ -282954,7 +282954,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.567,
-      "mae_r": -0.486,
+      "mae_r": -0.54,
       "features_en_entrada": {
         "ticker": "MSFT",
         "precio_actual": 518.26,
@@ -283178,7 +283178,7 @@
       "capital_nocional_eur": 8307.47,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.755,
+      "mfe_r": 0.917,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "META",
@@ -283251,9 +283251,9 @@
       "cantidad_teorica": 36.283853577592566,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 12233.46,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.958,
+      "mfe_r": 1.382,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AAPL",
@@ -283292,14 +283292,14 @@
           "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.25,
+          "motivo": "target"
         },
         "1.5": {
           "resuelto": false,
@@ -283311,6 +283311,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-09-30T14:40:49.998192+00:00",
+      "precio_cierre": 338.5380234200614,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 0.726,
+        "2_ticks": 1.451,
+        "3_ticks": 2.177
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 49.27,
+        "2_ticks": 48.55,
+        "3_ticks": 47.82
       }
     },
     {
@@ -283419,7 +283434,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.058,
-      "mae_r": -0.671,
+      "mae_r": -0.897,
       "features_en_entrada": {
         "ticker": "NVDA",
         "precio_actual": 231.13,
@@ -283493,7 +283508,7 @@
       "capital_nocional_eur": 10914.79,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 0.057,
       "mae_r": -0.666,
       "features_en_entrada": {
         "ticker": "TSLA",
@@ -283551,6 +283566,49 @@
           "resultado_r": null,
           "motivo": null
         }
+      }
+    },
+    {
+      "id": "62d738fa",
+      "ticker": "AAPL",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-09-30T14:40:49.998192+00:00",
+      "precio_entrada": 339.065,
+      "stop": 337.64829119001115,
+      "target": 340.48170880998885,
+      "riesgo_precio": 1.4167088099888474,
+      "cantidad_teorica": 35.29306774085326,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 11966.64,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AAPL",
+        "precio_actual": 339.065,
+        "atr": 1.4167088099888392,
+        "minutos_desde_apertura": 75,
+        "return_since_open": 0.024984922950492594,
+        "return_5m": null,
+        "return_10m": 0.0009003135717997601,
+        "return_15m": 0.002735509881976572,
+        "speed": 0.11020016276041664,
+        "normalized_speed": 0.07778603618712923,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.009108108176527178,
+        "rango_sesion_pct": 0.028294722322317667,
+        "session_high": 339.5,
+        "session_low": 330.1401062011719,
+        "max_reciente_12v": 339.5,
+        "min_reciente_12v": 333.2099914550781,
+        "volatilidad_reciente": 0.0028676322263181233,
+        "rvol": 1.6862209789838407,
+        "qqq_return_since_open": 0.003066806527733057,
+        "spy_return_since_open": 0.001461276142409318,
+        "relative_strength_qqq": 0.021918116422759537,
+        "timestamp": "2026-09-30T14:40:49.998192+00:00"
       }
     }
   ]
