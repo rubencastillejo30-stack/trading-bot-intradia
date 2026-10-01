@@ -292626,8 +292626,8 @@
       "capital_nocional_eur": 11765.48,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
-      "mae_r": -0.52,
+      "mfe_r": 0.135,
+      "mae_r": -0.642,
       "features_en_entrada": {
         "ticker": "NVDA",
         "precio_actual": 230.062,
@@ -292701,8 +292701,8 @@
       "capital_nocional_eur": 12358.5,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
-      "mae_r": -0.205,
+      "mfe_r": 0.377,
+      "mae_r": -0.449,
       "features_en_entrada": {
         "ticker": "AMZN",
         "precio_actual": 247.67,
@@ -292774,10 +292774,10 @@
       "cantidad_teorica": 36.45778862124531,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 12945.47,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
-      "mae_r": -0.029,
+      "mfe_r": 1.086,
+      "mae_r": -0.403,
       "features_en_entrada": {
         "ticker": "TSLA",
         "precio_actual": 355.081,
@@ -292805,19 +292805,19 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
           "resuelto": false,
@@ -292834,6 +292834,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-10-01T14:10:48.319261+00:00",
+      "precio_cierre": 356.4524490618025,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 0.729,
+        "2_ticks": 1.458,
+        "3_ticks": 2.187
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 49.27,
+        "2_ticks": 48.54,
+        "3_ticks": 47.81
       }
     },
     {
@@ -292851,8 +292866,8 @@
       "capital_nocional_eur": 12097.22,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
-      "mae_r": -0.513,
+      "mfe_r": 0.201,
+      "mae_r": -0.984,
       "features_en_entrada": {
         "ticker": "AVGO",
         "precio_actual": 349.13,
@@ -292924,10 +292939,10 @@
       "cantidad_teorica": 13.363737950111979,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 8066.35,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": 0.0,
+      "mae_r": -1.533,
       "features_en_entrada": {
         "ticker": "AMD",
         "precio_actual": 603.6,
@@ -292952,6 +292967,53 @@
         "spy_return_since_open": -0.005560207338751844,
         "relative_strength_qqq": -0.006334974199147303,
         "timestamp": "2026-10-01T14:05:45.270411+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "0.75": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.0": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.25": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "1.5": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        },
+        "2.0": {
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
+        }
+      },
+      "fecha_cierre": "2026-10-01T14:10:48.319261+00:00",
+      "precio_cierre": 607.3414681570871,
+      "motivo_cierre": "stop",
+      "resultado_r": -1.0,
+      "pnl_bruto_eur": -50.0,
+      "costes_eur": {
+        "1_ticks": 0.267,
+        "2_ticks": 0.535,
+        "3_ticks": 0.802
+      },
+      "pnl_neto_eur": {
+        "1_ticks": -50.27,
+        "2_ticks": -50.53,
+        "3_ticks": -50.8
       }
     }
   ]
