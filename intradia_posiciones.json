@@ -306348,10 +306348,10 @@
       "cantidad_teorica": 148.31847191418098,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 49444.93,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
       "mfe_r": 0.979,
-      "mae_r": -0.564,
+      "mae_r": -1.487,
       "features_en_entrada": {
         "ticker": "AAPL",
         "precio_actual": 333.37,
@@ -306389,25 +306389,40 @@
           "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.25": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "1.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         },
         "2.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": -1.0,
+          "motivo": "stop"
         }
+      },
+      "fecha_cierre": "2026-10-02T18:10:55.204913+00:00",
+      "precio_cierre": 333.0328875732422,
+      "motivo_cierre": "stop",
+      "resultado_r": -1.0,
+      "pnl_bruto_eur": -50.0,
+      "costes_eur": {
+        "1_ticks": 2.966,
+        "2_ticks": 5.933,
+        "3_ticks": 8.899
+      },
+      "pnl_neto_eur": {
+        "1_ticks": -52.97,
+        "2_ticks": -55.93,
+        "3_ticks": -58.9
       }
     },
     {
@@ -306965,7 +306980,7 @@
       "capital_nocional_eur": 25192.33,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.169,
+      "mfe_r": 0.869,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AVGO",
@@ -306994,14 +307009,14 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
           "resuelto": false,
@@ -307040,7 +307055,7 @@
       "capital_nocional_eur": 49200.63,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.615,
+      "mfe_r": 0.932,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "META",
@@ -307074,9 +307089,9 @@
           "motivo": "target"
         },
         "0.75": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.75,
+          "motivo": "target"
         },
         "1.0": {
           "resuelto": false,
@@ -307116,7 +307131,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": 0.0,
+      "mae_r": -0.229,
       "features_en_entrada": {
         "ticker": "AMD",
         "precio_actual": 630.82,
@@ -307141,6 +307156,38 @@
         "spy_return_since_open": -0.0018038550411506593,
         "relative_strength_qqq": -0.005651508428555663,
         "timestamp": "2026-10-02T18:05:44.298858+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
       }
     }
   ]
