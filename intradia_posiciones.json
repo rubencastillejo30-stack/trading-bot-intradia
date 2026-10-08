@@ -346994,7 +346994,7 @@
       "capital_nocional_eur": 33770.89,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.812,
+      "mfe_r": 0.887,
       "mae_r": -0.634,
       "features_en_entrada": {
         "ticker": "TSLA",
@@ -347159,7 +347159,7 @@
       "capital_nocional_eur": 31658.23,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.315,
+      "mfe_r": 0.702,
       "mae_r": -0.223,
       "features_en_entrada": {
         "ticker": "AAPL",
@@ -347188,9 +347188,9 @@
       },
       "shadows": {
         "0.5": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 0.5,
+          "motivo": "target"
         },
         "0.75": {
           "resuelto": false,
@@ -347322,10 +347322,10 @@
       "cantidad_teorica": 56.245662819297735,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 20155.63,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.984,
-      "mae_r": 0.0,
+      "mfe_r": 1.057,
+      "mae_r": -0.174,
       "features_en_entrada": {
         "ticker": "AVGO",
         "precio_actual": 358.35,
@@ -347363,9 +347363,9 @@
           "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
           "resuelto": false,
@@ -347382,6 +347382,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-10-08T19:45:44.369364+00:00",
+      "precio_cierre": 357.4610425676619,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 1.125,
+        "2_ticks": 2.25,
+        "3_ticks": 3.375
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 48.88,
+        "2_ticks": 47.75,
+        "3_ticks": 46.62
       }
     },
     {
@@ -347400,7 +347415,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": 0.0,
+      "mae_r": -0.285,
       "features_en_entrada": {
         "ticker": "AMD",
         "precio_actual": 615.0,
@@ -347425,6 +347440,38 @@
         "spy_return_since_open": -0.0019874274791013002,
         "relative_strength_qqq": -0.027955844106043348,
         "timestamp": "2026-10-08T19:40:46.435568+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
       }
     },
     {
@@ -347443,7 +347490,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.0,
-      "mae_r": 0.0,
+      "mae_r": -0.109,
       "features_en_entrada": {
         "ticker": "META",
         "precio_actual": 721.3,
@@ -347468,6 +347515,81 @@
         "spy_return_since_open": -0.0019874274791013002,
         "relative_strength_qqq": 0.0054322264409915055,
         "timestamp": "2026-10-08T19:40:46.435568+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "ab08420c",
+      "ticker": "AVGO",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "SHORT",
+      "fecha_entrada": "2026-10-08T19:45:44.369364+00:00",
+      "precio_entrada": 358.505,
+      "stop": 359.38037928989957,
+      "target": 357.6296207101004,
+      "riesgo_precio": 0.8753792898995698,
+      "cantidad_teorica": 57.1180979227146,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 20477.12,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AVGO",
+        "precio_actual": 358.505,
+        "atr": 0.8753792898995536,
+        "minutos_desde_apertura": 380,
+        "return_since_open": -0.03297550946523986,
+        "return_5m": null,
+        "return_10m": 0.00033480818423026193,
+        "return_15m": 0.0020823742565947434,
+        "speed": -0.032171081542968764,
+        "normalized_speed": -0.036751019717019204,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.018400012596338975,
+        "rango_sesion_pct": 0.04299600899928145,
+        "session_high": 373.3500061035156,
+        "session_low": 357.41009521484375,
+        "max_reciente_12v": 359.4100036621094,
+        "min_reciente_12v": 357.41009521484375,
+        "volatilidad_reciente": 0.0012812945938902045,
+        "rvol": 1.8633021788350959,
+        "qqq_return_since_open": -0.00985089276043094,
+        "spy_return_since_open": -0.0019099972856109204,
+        "relative_strength_qqq": -0.02312461670480892,
+        "timestamp": "2026-10-08T19:45:44.369364+00:00"
       }
     }
   ]
