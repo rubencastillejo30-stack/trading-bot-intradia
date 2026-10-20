@@ -433969,9 +433969,9 @@
       "cantidad_teorica": 21.276106306326508,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 11505.05,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.9,
+      "mfe_r": 1.166,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "AMD",
@@ -434010,9 +434010,9 @@
           "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
           "resuelto": false,
@@ -434029,6 +434029,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-10-20T16:35:38.408456+00:00",
+      "precio_cierre": 543.1000540597098,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 0.426,
+        "2_ticks": 0.851,
+        "3_ticks": 1.277
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 49.57,
+        "2_ticks": 49.15,
+        "3_ticks": 48.72
       }
     },
     {
@@ -434047,7 +434062,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.594,
-      "mae_r": -0.093,
+      "mae_r": -0.221,
       "features_en_entrada": {
         "ticker": "AMZN",
         "precio_actual": 262.765,
@@ -434121,7 +434136,7 @@
       "capital_nocional_eur": 35759.52,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 0.269,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "MSFT",
@@ -434147,6 +434162,81 @@
         "spy_return_since_open": 0.004413345712612093,
         "relative_strength_qqq": -0.008791914824552105,
         "timestamp": "2026-10-20T16:31:04.435755+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "492d785a",
+      "ticker": "AMD",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-10-20T16:35:38.408456+00:00",
+      "precio_entrada": 543.49,
+      "stop": 541.5399877929688,
+      "target": 545.4400122070313,
+      "riesgo_precio": 1.95001220703125,
+      "cantidad_teorica": 25.640865128799025,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 13935.55,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AMD",
+        "precio_actual": 543.49,
+        "atr": 1.95001220703125,
+        "minutos_desde_apertura": 190,
+        "return_since_open": 0.025414097529113944,
+        "return_5m": null,
+        "return_10m": 0.0009023941068140306,
+        "return_15m": 0.00237917330122861,
+        "speed": 0.07089463404605267,
+        "normalized_speed": 0.036355994998608,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.00932016032788857,
+        "rango_sesion_pct": 0.044350960541916444,
+        "session_high": 548.1068725585938,
+        "session_low": 524.5999755859375,
+        "max_reciente_12v": 544.3099975585938,
+        "min_reciente_12v": 539.6099853515625,
+        "volatilidad_reciente": 0.0017347067984290478,
+        "rvol": 0.6242955488465882,
+        "qqq_return_since_open": 0.006208143886589079,
+        "spy_return_since_open": 0.004661436022904253,
+        "relative_strength_qqq": 0.019205953642524864,
+        "timestamp": "2026-10-20T16:35:38.408456+00:00"
       }
     }
   ]
