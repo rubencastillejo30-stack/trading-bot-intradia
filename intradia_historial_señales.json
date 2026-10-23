@@ -882831,6 +882831,91 @@
         "timestamp": "2026-10-23T13:31:06.075401+00:00"
       },
       "decision": "ejecutada"
+    },
+    {
+      "id": "0572b71f",
+      "timestamp": "2026-10-23T13:35:40.333418+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "AMZN",
+      "señal": {
+        "ticker": "AMZN",
+        "estrategia_id": "BREAKOUT_V01",
+        "direccion": "SHORT",
+        "precio_entrada": 247.87,
+        "stop": 248.55391854422433,
+        "target": 247.18608145577568,
+        "atr": 0.6839185442243304,
+        "motivo": "precio 247.87 rompe mínimo reciente 248.15"
+      },
+      "features_en_entrada": {
+        "ticker": "AMZN",
+        "precio_actual": 247.87,
+        "atr": 0.6839185442243304,
+        "minutos_desde_apertura": 10,
+        "return_since_open": -0.0027318395273543405,
+        "return_5m": null,
+        "return_10m": -0.0011886982213993313,
+        "return_15m": null,
+        "speed": -0.0678995971679683,
+        "normalized_speed": -0.09928023993701905,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.0031668341285984052,
+        "rango_sesion_pct": 0.0071611925833943305,
+        "session_high": 249.64990234375,
+        "session_low": 247.8699951171875,
+        "max_reciente_12v": 249.64990234375,
+        "min_reciente_12v": 248.14999389648438,
+        "volatilidad_reciente": null,
+        "rvol": 0.5246515497777214,
+        "qqq_return_since_open": 0.00032477809076203457,
+        "spy_return_since_open": -0.00019212641532595498,
+        "relative_strength_qqq": -0.003056617618116375,
+        "timestamp": "2026-10-23T13:35:40.333418+00:00"
+      },
+      "decision": "ejecutada"
+    },
+    {
+      "id": "9a8f5446",
+      "timestamp": "2026-10-23T13:35:40.333418+00:00",
+      "modelo_version": "v0.2",
+      "ticker": "TSLA",
+      "señal": {
+        "ticker": "TSLA",
+        "estrategia_id": "RS_QQQ_V01",
+        "direccion": "SHORT",
+        "precio_entrada": 369.77,
+        "stop": 371.7651041085379,
+        "target": 367.77489589146205,
+        "atr": 1.9951041085379464,
+        "motivo": "fuerza relativa vs QQQ=-0.934% <= -0.500%"
+      },
+      "features_en_entrada": {
+        "ticker": "TSLA",
+        "precio_actual": 369.77,
+        "atr": 1.9951041085379464,
+        "minutos_desde_apertura": 10,
+        "return_since_open": -0.009018209703074098,
+        "return_5m": null,
+        "return_10m": -0.002593538264737072,
+        "return_15m": null,
+        "speed": -0.33650097656250183,
+        "normalized_speed": -0.16866336705060306,
+        "aceleracion": null,
+        "distance_vwap_pct": -0.0021378321250935246,
+        "rango_sesion_pct": 0.014445212878371014,
+        "session_high": 373.1700134277344,
+        "session_low": 367.7799987792969,
+        "max_reciente_12v": 373.1700134277344,
+        "min_reciente_12v": 367.7799987792969,
+        "volatilidad_reciente": null,
+        "rvol": 1.0838675659429127,
+        "qqq_return_since_open": 0.00032477809076203457,
+        "spy_return_since_open": -0.00019212641532595498,
+        "relative_strength_qqq": -0.009342987793836133,
+        "timestamp": "2026-10-23T13:35:40.333418+00:00"
+      },
+      "decision": "rechazada",
+      "motivo_rechazo": "ya_hay_posicion_abierta_en_este_ticker"
     }
   ]
 }
