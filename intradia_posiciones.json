@@ -465809,7 +465809,7 @@
       "capital_nocional_eur": 16697.33,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.907,
+      "mfe_r": 0.908,
       "mae_r": -0.66,
       "features_en_entrada": {
         "ticker": "AAPL",
@@ -466335,7 +466335,7 @@
       "estado": "abierta",
       "modelo_version": "v0.2",
       "mfe_r": 0.942,
-      "mae_r": -0.286,
+      "mae_r": -0.392,
       "features_en_entrada": {
         "ticker": "AMZN",
         "precio_actual": 248.41,
@@ -466572,9 +466572,9 @@
       "cantidad_teorica": 14.440949601227052,
       "riesgo_eur": 50.0,
       "capital_nocional_eur": 7454.27,
-      "estado": "abierta",
+      "estado": "cerrada",
       "modelo_version": "v0.2",
-      "mfe_r": 0.814,
+      "mfe_r": 1.008,
       "mae_r": -0.173,
       "features_en_entrada": {
         "ticker": "AMD",
@@ -466613,9 +466613,9 @@
           "motivo": "target"
         },
         "1.0": {
-          "resuelto": false,
-          "resultado_r": null,
-          "motivo": null
+          "resuelto": true,
+          "resultado_r": 1.0,
+          "motivo": "target"
         },
         "1.25": {
           "resuelto": false,
@@ -466632,6 +466632,21 @@
           "resultado_r": null,
           "motivo": null
         }
+      },
+      "fecha_cierre": "2026-10-23T14:35:44.276357+00:00",
+      "precio_cierre": 519.6523761858259,
+      "motivo_cierre": "target",
+      "resultado_r": 1.0,
+      "pnl_bruto_eur": 50.0,
+      "costes_eur": {
+        "1_ticks": 0.289,
+        "2_ticks": 0.578,
+        "3_ticks": 0.866
+      },
+      "pnl_neto_eur": {
+        "1_ticks": 49.71,
+        "2_ticks": 49.42,
+        "3_ticks": 49.13
       }
     },
     {
@@ -466649,7 +466664,7 @@
       "capital_nocional_eur": 6196.21,
       "estado": "abierta",
       "modelo_version": "v0.2",
-      "mfe_r": 0.0,
+      "mfe_r": 0.207,
       "mae_r": 0.0,
       "features_en_entrada": {
         "ticker": "TSLA",
@@ -466675,6 +466690,124 @@
         "spy_return_since_open": 0.00017638361540783798,
         "relative_strength_qqq": -0.011339993422147532,
         "timestamp": "2026-10-23T14:31:09.123727+00:00"
+      },
+      "shadows": {
+        "0.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "0.75": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.25": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "1.5": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        },
+        "2.0": {
+          "resuelto": false,
+          "resultado_r": null,
+          "motivo": null
+        }
+      }
+    },
+    {
+      "id": "da0fe3f3",
+      "ticker": "MSFT",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-10-23T14:35:44.276357+00:00",
+      "precio_entrada": 523.39,
+      "stop": 521.2162154715402,
+      "target": 525.5637845284598,
+      "riesgo_precio": 2.173784528459805,
+      "cantidad_teorica": 23.00135976928062,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 12038.68,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "MSFT",
+        "precio_actual": 523.39,
+        "atr": 2.1737845284598216,
+        "minutos_desde_apertura": 70,
+        "return_since_open": 0.010415167972022576,
+        "return_5m": null,
+        "return_10m": 0.0005640071371331157,
+        "return_15m": 0.0017609228251660447,
+        "speed": 0.07707149832589266,
+        "normalized_speed": 0.03545498521902705,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.006710271572411696,
+        "rango_sesion_pct": 0.015637051761376156,
+        "session_high": 523.7999267578125,
+        "session_low": 515.7000122070312,
+        "max_reciente_12v": 523.7999267578125,
+        "min_reciente_12v": 516.5800170898438,
+        "volatilidad_reciente": 0.0015530807809717051,
+        "rvol": 0.9033976298164298,
+        "qqq_return_since_open": 0.004369725778974098,
+        "spy_return_since_open": -0.0003105990167496797,
+        "relative_strength_qqq": 0.006045442193048478,
+        "timestamp": "2026-10-23T14:35:44.276357+00:00"
+      }
+    },
+    {
+      "id": "1da56c11",
+      "ticker": "AMD",
+      "estrategia_id": "RS_QQQ_V01",
+      "direccion": "LONG",
+      "fecha_entrada": "2026-10-23T14:35:44.276357+00:00",
+      "precio_entrada": 518.21,
+      "stop": 514.6760971505302,
+      "target": 521.7439028494699,
+      "riesgo_precio": 3.5339028494698823,
+      "cantidad_teorica": 14.14866286080854,
+      "riesgo_eur": 50.0,
+      "capital_nocional_eur": 7331.98,
+      "estado": "abierta",
+      "modelo_version": "v0.2",
+      "mfe_r": 0.0,
+      "mae_r": 0.0,
+      "features_en_entrada": {
+        "ticker": "AMD",
+        "precio_actual": 518.21,
+        "atr": 3.533902849469866,
+        "minutos_desde_apertura": 70,
+        "return_since_open": 0.01579928687630483,
+        "return_5m": null,
+        "return_10m": -0.0006749412994475623,
+        "return_15m": 0.0008111821210918801,
+        "speed": 0.11514294433593802,
+        "normalized_speed": 0.03258237400420078,
+        "aceleracion": null,
+        "distance_vwap_pct": 0.006553755453908583,
+        "rango_sesion_pct": 0.022195249690502163,
+        "session_high": 519.6799926757812,
+        "session_low": 508.3570861816406,
+        "max_reciente_12v": 519.6799926757812,
+        "min_reciente_12v": 511.5,
+        "volatilidad_reciente": 0.0026946284911177057,
+        "rvol": 0.7289951953416649,
+        "qqq_return_since_open": 0.004369725778974098,
+        "spy_return_since_open": -0.0003105990167496797,
+        "relative_strength_qqq": 0.011429561097330732,
+        "timestamp": "2026-10-23T14:35:44.276357+00:00"
       }
     }
   ]
